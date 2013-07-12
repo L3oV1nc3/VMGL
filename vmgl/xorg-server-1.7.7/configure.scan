@@ -1,0 +1,152 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ([2.63])
+AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
+AC_CONFIG_SRCDIR([dix/cursor.c])
+AC_CONFIG_HEADERS([config.h])
+
+# Checks for programs.
+AC_PROG_CXX
+AC_PROG_AWK
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+
+# Checks for libraries.
+# FIXME: Replace `main' with a function in `-lGL':
+AC_CHECK_LIB([GL], [main])
+# FIXME: Replace `main' with a function in `-lXplugin':
+AC_CHECK_LIB([Xplugin], [main])
+# FIXME: Replace `main' with a function in `-ldmxconfig':
+AC_CHECK_LIB([dmxconfig], [main])
+# FIXME: Replace `main' with a function in `-lm':
+AC_CHECK_LIB([m], [main])
+
+# Checks for header files.
+AC_PATH_X
+AC_FUNC_ALLOCA
+AC_CHECK_HEADERS([arpa/inet.h fcntl.h inttypes.h libintl.h limits.h mach/mach.h malloc.h mntent.h netdb.h netinet/in.h paths.h stddef.h stdint.h stdlib.h string.h strings.h sys/file.h sys/ioctl.h sys/param.h sys/socket.h sys/time.h termio.h termios.h unistd.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_STDBOOL
+AC_TYPE_UID_T
+AC_C_INLINE
+AC_TYPE_INT16_T
+AC_TYPE_INT32_T
+AC_TYPE_INT64_T
+AC_TYPE_INT8_T
+AC_TYPE_MODE_T
+AC_TYPE_OFF_T
+AC_TYPE_PID_T
+AC_TYPE_SIZE_T
+AC_TYPE_SSIZE_T
+AC_CHECK_MEMBERS([struct stat.st_rdev])
+AC_TYPE_UINT16_T
+AC_TYPE_UINT32_T
+AC_TYPE_UINT64_T
+AC_TYPE_UINT8_T
+
+# Checks for library functions.
+AC_FUNC_CHOWN
+AC_FUNC_FORK
+AC_FUNC_GETMNTENT
+AC_FUNC_MALLOC
+AC_HEADER_MAJOR
+AC_FUNC_MMAP
+AC_FUNC_REALLOC
+AC_FUNC_STRTOD
+AC_CHECK_FUNCS([bzero clock_gettime dup2 floor ftruncate gethostname getmntent getpagesize gettimeofday inet_ntoa memchr memmove memset munmap pow putenv regcomp rint select setenv setlocale socket sqrt strcasecmp strchr strcspn strdup strerror strncasecmp strpbrk strrchr strstr strtol strtoul uname])
+
+AC_CONFIG_FILES([Makefile
+                 Xext/Makefile
+                 Xi/Makefile
+                 composite/Makefile
+                 config/Makefile
+                 damageext/Makefile
+                 dbe/Makefile
+                 dix/Makefile
+                 doc/Makefile
+                 exa/Makefile
+                 fb/Makefile
+                 glx/Makefile
+                 hw/Makefile
+                 hw/dmx/Makefile
+                 hw/dmx/config/Makefile
+                 hw/dmx/doc/Makefile
+                 hw/dmx/examples/Makefile
+                 hw/dmx/glxProxy/Makefile
+                 hw/dmx/input/Makefile
+                 hw/kdrive/Makefile
+                 hw/kdrive/ephyr/Makefile
+                 hw/kdrive/fake/Makefile
+                 hw/kdrive/fbdev/Makefile
+                 hw/kdrive/linux/Makefile
+                 hw/kdrive/sdl/Makefile
+                 hw/kdrive/src/Makefile
+                 hw/vfb/Makefile
+                 hw/xfree86/Makefile
+                 hw/xfree86/common/Makefile
+                 hw/xfree86/ddc/Makefile
+                 hw/xfree86/dixmods/Makefile
+                 hw/xfree86/dixmods/extmod/Makefile
+                 hw/xfree86/doc/Makefile
+                 hw/xfree86/doc/devel/Makefile
+                 hw/xfree86/doc/man/Makefile
+                 hw/xfree86/doc/sgml/Makefile
+                 hw/xfree86/dri/Makefile
+                 hw/xfree86/dri2/Makefile
+                 hw/xfree86/exa/Makefile
+                 hw/xfree86/fbdevhw/Makefile
+                 hw/xfree86/i2c/Makefile
+                 hw/xfree86/int10/Makefile
+                 hw/xfree86/loader/Makefile
+                 hw/xfree86/modes/Makefile
+                 hw/xfree86/os-support/Makefile
+                 hw/xfree86/os-support/bsd/Makefile
+                 hw/xfree86/os-support/bus/Makefile
+                 hw/xfree86/os-support/hurd/Makefile
+                 hw/xfree86/os-support/linux/Makefile
+                 hw/xfree86/os-support/misc/Makefile
+                 hw/xfree86/os-support/sco/Makefile
+                 hw/xfree86/os-support/solaris/Makefile
+                 hw/xfree86/os-support/sysv/Makefile
+                 hw/xfree86/parser/Makefile
+                 hw/xfree86/ramdac/Makefile
+                 hw/xfree86/shadowfb/Makefile
+                 hw/xfree86/utils/Makefile
+                 hw/xfree86/utils/cvt/Makefile
+                 hw/xfree86/utils/gtf/Makefile
+                 hw/xfree86/vbe/Makefile
+                 hw/xfree86/vgahw/Makefile
+                 hw/xfree86/x86emu/Makefile
+                 hw/xfree86/xaa/Makefile
+                 hw/xfree86/xf8_16bpp/Makefile
+                 hw/xnest/Makefile
+                 hw/xquartz/GL/Makefile
+                 hw/xquartz/Makefile
+                 hw/xquartz/bundle/Makefile
+                 hw/xquartz/doc/Makefile
+                 hw/xquartz/mach-startup/Makefile
+                 hw/xquartz/pbproxy/Makefile
+                 hw/xquartz/xpr/Makefile
+                 hw/xwin/Makefile
+                 include/Makefile
+                 mi/Makefile
+                 miext/Makefile
+                 miext/cw/Makefile
+                 miext/damage/Makefile
+                 miext/rootless/Makefile
+                 miext/shadow/Makefile
+                 os/Makefile
+                 randr/Makefile
+                 record/Makefile
+                 render/Makefile
+                 test/Makefile
+                 test/xi2/Makefile
+                 xfixes/Makefile
+                 xkb/Makefile])
+AC_OUTPUT

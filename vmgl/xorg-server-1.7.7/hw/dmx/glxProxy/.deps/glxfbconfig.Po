@@ -1,0 +1,38 @@
+glxfbconfig.o: glxfbconfig.c glxfbconfig.h /usr/include/GL/glxint.h \
+ /usr/include/X11/X.h /usr/include/X11/Xdefs.h /usr/include/GL/gl.h \
+ /usr/include/GL/glext.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stddef.h \
+ /usr/include/inttypes.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/stdint.h \
+ /usr/include/bits/wchar.h
+
+glxfbconfig.h:
+
+/usr/include/GL/glxint.h:
+
+/usr/include/X11/X.h:
+
+/usr/include/X11/Xdefs.h:
+
+/usr/include/GL/gl.h:
+
+/usr/include/GL/glext.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stddef.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:

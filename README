@@ -1,0 +1,87 @@
+VMGL
+
+Hardware accelerated OpenGL graphics for Virtual Machines
+H. Andres Lagar-Cavilla, University of Toronto, 2006
+http://www.cs.toronto.edu/~andreslc/vmgl
+bugs,requests,hatemail,lovemail: andreslc@cs.toronto.edu
+
+Motified and ported to current X by Joshua Humpich in Feb-May '2013
+
+
+* Licensing:
+  BSD-modified licence. This is Free and Open Source Software.
+  The file LICENCE.txt specifies the terms of use and distribution.
+
+
+* Prerequisites:
+  The usual suspects: make, gcc. Plus Imake, python and OpenGL library
+  headers.
+
+
+* Modification: 
+  Ported VMGL on current X (X11 R7.7)
+
+
+*) Xen prerequisite: DRM kernel modules for Xen domain0
+
+If your graphics card belongs to the Intel family (i810, i915, etc)
+dom0 kernels already contain DRM drivers. Unfortunately, most humans
+use ATI and Nvidia cards, whose kernel modules need modifications to
+get along with dom0.
+
+For ATI: cd fglrx, and use that README to build a dom0-friendly
+fglrx.ko kernel module. The module should go in /lib/modules/`uname
+-r`/kernel/drivers/char/drm Run depmod -a, make sure to change
+/etc/X11/xorg.conf to use the fglrx driver, and restart X.
+
+For Nvidia: There are similar patches for nvidia's driver. I cannot
+attest to their effectivenes as I don't usually have an Nvidia card
+lying around.  Therefore, I forward you to the following sites
+
+http://lists.xensource.com/archives/html/xen-devel/2006-03/msg00615.html
+http://rpm.livna.org
+
+The net result should be that the output of glxinfo, in dom0,
+indicates "Direct Rendering: yes". This means that you can run your
+OpenGL apps in dom0 with hardware acceleration, but not yet in domU.
+
+
+*) Patches
+Their are 5 patches available, if you want to compile the sources at your own risc :)
+Head to the /vmgl-0.2/vmgl/extra/patches/ directory.
+
++ Xorg.patch: This is the patch files for the X11 R7.7 tree
++ Xvnc.patch: This is the patch file for the Xvnc
++ vncviewer.patch: This is the patch file for the VncViewer
+
+I didn't modified the following patch files, so I haven't tested them:
+-vmgl-hvm-sdl.patch
+-vmgl-sdlfb.patch
+
+
+* Usage
+There are different ways to use vmgl. I just used X-forwarding and Vnc.
+If you want to know more about the usage of vmgl take a look at the README file in /vmgl-0.2/vmgl/
+
+Using X-forwarding:
+(1) Start stub-daemon in the host, log message go to  ~/.stub-daemon.log
+(2) Their are two ways to use X-Forwarding, to set up from guest to host
+	(2.1) Using ssh: 
+		Type in the host 'ssh -X <hostname_or_hostIP>'
+	(2.2) Set Display
+		Type in the guest 'set DISPLAY=<hostname_or_hostIP>:0'
+(3) Type 'set GLSTUB=<hostname_or_hostIP>:7000'
+(4) Start OpenGL-App, FUN!
+*(5) My check if is's working with 'glxinfo'. The Vendor shoud be VMGL
+
+
+
+Using Xvnc & vncviewer:
+(1) Start Xvnc in guest by typing 'Xvnc :<Display_ID>' (e.g. 'Xvnc :1')
+(2) Connect to the Xvnc from host by typing 'vncviewer <guestname_or_guestIP>:<Display_ID>' (e.g. 'vncviewer guestname:1')
+(3) After connecting to Xvnc the guest should display something like "Set GLSTUB var in guest to point to port <port>"
+    Solve this by typing in guest 'export GLSTUB=<hostname_or_hostIP>:<port>'
+(4) Start OpenGL-App, FUN!
+*(5) Check for success by using 'glxinfo'. The vendor should be 'VMGL'
+
+

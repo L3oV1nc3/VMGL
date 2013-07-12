@@ -1,0 +1,5 @@
+#define OSName Linux
+#define OSMajorVersion 2
+#define OSMinorVersion 6
+#define OSTeenyVersion 32
+#define LinuxCLibMajorVersion 6

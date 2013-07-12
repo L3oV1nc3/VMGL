@@ -1,0 +1,48 @@
+diff -burN xenfb/Makefile xenfb-vmgl/Makefile
+--- xenfb/Makefile	2007-02-14 16:57:02.000000000 -0500
++++ xenfb-vmgl/Makefile	2007-02-15 14:37:47.000000000 -0500
+@@ -22,8 +22,8 @@
+ 
+ sdlfb: sdlfb.o xenfb.o
+ 
+-sdlfb.o: CFLAGS += $(shell sdl-config --cflags)
+-sdlfb: LDLIBS += $(shell sdl-config --libs) -lxenctrl -lxenstore
++sdlfb.o: CFLAGS += $(shell sdl-config --cflags) -I$(LIBVMGLSTUBPATH)
++sdlfb: LDLIBS += $(LIBVMGLSTUBPATH)/../../dist/lib/libvmglstubdaemon.a $(shell sdl-config --libs) -lxenctrl -lxenstore -lpthread
+ 
+ clean:
+ 	$(RM) *.o *~ vncfb sdlfb
+diff -burN xenfb/sdlfb.c xenfb-vmgl/sdlfb.c
+--- xenfb/sdlfb.c	2007-02-14 16:57:02.000000000 -0500
++++ xenfb-vmgl/sdlfb.c	2007-02-15 14:38:00.000000000 -0500
+@@ -8,6 +8,10 @@
+ #include <string.h>
+ #include "xenfb.h"
+ 
++/* VMGL */
++#include "vmgl-stub-daemon.h"
++#include <SDL_syswm.h>
++
+ struct SDLFBData
+ {
+ 	SDL_Surface *dst;
+@@ -222,6 +226,7 @@
+ 	int opt;
+ 	char *endp;
+ 	int retval;
++	SDL_SysWMinfo info; /* VMGL */
+ 
+ 	while ((opt = getopt_long(argc, argv, "d:t:", options,
+ 				  NULL)) != -1) {
+@@ -299,6 +304,11 @@
+ 
+ 	SDL_ShowCursor(0);
+ 
++	/* VMGL */
++	SDL_VERSION(&info.version);
++	SDL_GetWMInfo(&info);
++	daemonStart(info.info.x11.window, 7001, ".stub-daemon.log");
++
+ 	/*
+ 	 * We need to wait for fds becoming ready or SDL events to
+ 	 * arrive.  We time out the select after 10ms to poll for SDL

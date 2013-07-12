@@ -1,0 +1,118 @@
+xdmxconfig-Canvas.o: Canvas.c /usr/include/X11/IntrinsicP.h \
+ /usr/include/X11/Intrinsic.h /usr/include/X11/Xlib.h \
+ /usr/include/sys/types.h /usr/include/features.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stddef.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/X11/X.h \
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
+ /usr/include/X11/keysymdef.h /usr/include/X11/Xresource.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h /usr/include/stdlib.h \
+ /usr/include/X11/Core.h /usr/include/X11/Composite.h \
+ /usr/include/X11/Constraint.h /usr/include/X11/Object.h \
+ /usr/include/X11/RectObj.h /usr/include/X11/CoreP.h \
+ /usr/include/X11/CompositeP.h /usr/include/X11/ConstrainP.h \
+ /usr/include/X11/ObjectP.h /usr/include/X11/RectObjP.h \
+ /usr/include/X11/StringDefs.h CanvasP.h Canvas.h
+
+/usr/include/X11/IntrinsicP.h:
+
+/usr/include/X11/Intrinsic.h:
+
+/usr/include/X11/Xlib.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/time.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stddef.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/X11/X.h:
+
+/usr/include/X11/Xfuncproto.h:
+
+/usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xutil.h:
+
+/usr/include/X11/keysym.h:
+
+/usr/include/X11/keysymdef.h:
+
+/usr/include/X11/Xresource.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/X11/Core.h:
+
+/usr/include/X11/Composite.h:
+
+/usr/include/X11/Constraint.h:
+
+/usr/include/X11/Object.h:
+
+/usr/include/X11/RectObj.h:
+
+/usr/include/X11/CoreP.h:
+
+/usr/include/X11/CompositeP.h:
+
+/usr/include/X11/ConstrainP.h:
+
+/usr/include/X11/ObjectP.h:
+
+/usr/include/X11/RectObjP.h:
+
+/usr/include/X11/StringDefs.h:
+
+CanvasP.h:
+
+Canvas.h:

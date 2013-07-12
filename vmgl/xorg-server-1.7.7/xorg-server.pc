@@ -1,0 +1,18 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+moduledir=${exec_prefix}/lib/xorg/modules
+sdkdir=${prefix}/include/xorg
+
+abi_ansic=0.4
+abi_videodrv=6.0
+abi_xinput=7.0
+abi_extension=2.0
+
+Name: xorg-server
+Description: Modular X.Org X Server
+Version: 1.7.7
+Requires: pixman-1 pciaccess
+Cflags: -I${sdkdir} -fvisibility=hidden
+Libs: -L${libdir}

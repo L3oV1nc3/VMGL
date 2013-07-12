@@ -1,0 +1,5 @@
+; Copyright (c) H. Andres Lagar-Cavilla, University of Toronto, 2006-2007, vmgl project
+EXPORTS
+XVMGLExtInit
+XVMGLExtWatchWindow
+XVMGLExtReset

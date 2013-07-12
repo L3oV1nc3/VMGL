@@ -1,0 +1,62 @@
+fglrx kernel module for ATI GPU's, enabled for dom0. VMGL project. 
+Licence notice below.
+Known to work with a Radeon X600 (PCI Express)
+Based on versions
+	- fglrx = 8.26.8
+	- xen = unstable - pre 3.0.3
+
+IMPORTANT: SourceForge does not allow non open-source software. I have thus removed the
+file libfglrx_ip.a.GCC4 from fglrx_module. You must provide yourself this file by 
+downloading it from ATI
+
+First:
+- Copy the fglrx_module tree somewhere fancy, 
+or
+- Patch the kernel module open source wrapper in your fglrx tree with 
+  fglrx_module.patch. This tree is tipically in
+  fglrx-install/common/lib/modules/fglrx/build_mod
+  after unpacking ati-driver-installer-<version>.sh. Use patch -p1.
+	
+Build:
+- In fglrx_module directory just type "make". You can override KERNEL_PATH.
+or
+- If you patched your fglrx tree, be brave and rebuild it...
+
+Enjoy
+
+-- Andres
+
+This software is redistributed under the conditions of the original 
+ATI license as noted in fglrx_module/ATI_LICENSE.txt.
+The following licence applies to additional modifications made in the 
+context of the vmgl project:
+/*
+* Copyright (c) 2006-2007 H. Andres Lagar-Cavilla <andreslc@cs.toronto.edu>
+*
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are
+* met:
+*
+*   1. Redistributions of source code must retain the above copyright
+* notice, this list of conditions and the following disclaimer.
+*   2. Redistributions in binary form must reproduce the above
+* copyright notice, this list of conditions and the following disclaimer
+* in the documentation and/or other materials provided with the
+* distribution.
+*   3. The name of the author may not be used to endorse or promote
+* products derived from this software without specific prior written
+* permission.
+*
+* THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+* IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+* DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
+* INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+* SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+* STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+* IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+* POSSIBILITY OF SUCH DAMAGE.
+*/
+

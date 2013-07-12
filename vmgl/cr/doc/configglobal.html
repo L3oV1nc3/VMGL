@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- Copyright (c) 2001, Stanford University
+     All rights reserved.
+
+	 See the file LICENSE.txt for information on redistributing this software.  -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+<link rel="stylesheet" type="text/css" href="chromium.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1 class="PageHeading">Global Configuration Options</h1>
+<p>This page describes the global options for Chromium.  Such options
+are specified to Chromium as follows:
+</p>
+<pre>
+        cr.Conf( param, values )
+</pre>
+<p>
+where <code>cr</code> is the object returned by <code>CR()</code>.
+</p>
+<p>
+Here are some concrete examples of global configuration options:
+</p>
+<pre>
+        cr = CR()
+        cr.Conf( 'MTU', 10 * 1024 * 1024 )
+</pre>
+
+<table border="1" width="100%">
+  <tr class="ConfigTableHeader">
+    <td width="19%">Parameter Name</td>
+    <td width="12%">Value Types</td>
+    <td width="115%">Description</td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">MTU</td>
+    <td width="12%" class="ConfigType">Integer</td>
+    <td width="115%" class="ConfigDesc">
+      This options sets the maximum transmission unit size in bytes.
+      This is the size of network buffer that Chromium allocates for
+      inter-node communication.
+      Setting this options is equivalent to calling <code>cr.MTU(bytes)</code>.
+      The default is one megabyte.
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

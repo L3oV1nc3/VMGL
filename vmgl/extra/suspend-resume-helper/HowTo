@@ -1,0 +1,27 @@
+Suspend Resume code is experimental. Use at your own risk. (I trust it)
+
+It is also quite hacky. We currently allow "suspending" only after a
+glXSwapBuffers call has been issued. This provides a nice "barrier"
+point when all interesting state has been flushed to the stub and
+nobody is waiting for anybody's replies. Theredore, to suspend an
+OpenGL app, send signal USR2 to it. You'll see the window going blank,
+as the app waits for the resume order.
+
+Upon resume, you must tell the app where to try to spawn new
+stubs. Environment var is no good, can't change the environment on the
+fly. So I concocted a Unix socket daemon (sr_daemon in this dir) that
+will tell apps that talk to it where the new gl stubs should go.
+
+./sr_daemon <host_hostname>:<port_viewer_in_host_barfed>
+
+is the way to go. All suspended GL apps (those killed with USR2) will
+obtain the new gl stub location from sr_daemon and attempt
+resume. Affter that you can kill sr_daemon with SIGINT.
+
+This is essentially a user level hack to prevent doing anything VMM
+specific. In Xen parlance, instead of killing the apps with USR2 we
+would have something on the Xenbus with a "suspend" method contacting
+all GL apps. Conversely, instead of an sr_daemon, the Xenubs "resume"
+method would again contact all GL apps with the new GLSTUB string.
+
+-- Andres

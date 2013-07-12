@@ -1,0 +1,69 @@
+Finish up tilesort glReadPixels pixelstore parameters.
+
+Grep the code for 'XXX' for miscellaneous loose ends.
+
+In state_polygon_gen.c in crStatePolygonSwitch() we need a better test
+for updating the polygon stipple.  As-is we're calling diff.PolygonStipple
+all the time.
+
+Separate auto-start controls for server and app nodes.
+
+Don't require a program argument in sort-last template.
+
+Sort-last template seems to require all command line args, instead of none.
+
+Wes Bethel:
+  While driving the GUI config tool, I started out with a tilesort
+  template. On the app node, I added an array SPU before the tilesort
+  spu, then save the config file. The config file doesn't contain the
+  array spu I asked for. There may be related problems for other
+  app-side SPU additions - I've not checked.
+
+Remove #include <math.h> ; create a cr_math.h file instead.
+  Wrapper for absf() in server_tiles.c
+
+Rewrite the opengl_stub/defs.py file so that we don't need to manually
+update the stack_sizes array.  The sizes should be obtained by calling
+apiutil.PacketLength() or something similar.
+
+Check unpacker/unpack.c for unfinished special case functions.
+
+Implement GL_EXT_draw_range_elements extension
+
+In DLM's BindTexture function, record the texture ID with the display
+list info so that we know which textures are bound in a list.  Then, in
+tilesort, before glCallList, flush (state-diff) all those textures to
+be sure the servers' texture are up to date.  We currently flush all
+textures prior to glCallList (but that code's disabled).
+
+
+
+
+CRServer context management issue
+---------------------------------
+
+In the CRServer the Cr state tracker is used for "soft" context switching
+between multiple clients.  This is generally faster/cheaper than calling
+glXMakeCurrent() to do context switches.
+
+So, the CRServer asks the first SPU to create one rendering context which is
+thereafter used by all clients and all their contexts.
+
+The problem is, this single rendering context may not be compatible with
+all the different windows we might create on the server side.
+
+We might create several windows, each with different visuals/pixelformats
+(i.e. with/without stencil, accum, alpha, etc).  When we try to bind the
+rendering context to a window, the underlying GLXContext and X Window
+might not be compatible.
+
+Currently, there's a hack in crServerDispatchCreateContext() to try to
+work around this, but it's far from ideal.
+
+The right solution is for the CRServer to create a different rendering
+context for each different visual that's requested.  Then, when we have
+to do a context switch (either from one client to another, or between two
+contexts belonging to one client), do a "soft" context switch if the
+contexts have the same visual.  Otherwise, do a "hard/GLX" context switch
+if the contexts have different visuals.
+

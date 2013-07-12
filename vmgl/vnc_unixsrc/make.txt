@@ -1,0 +1,54 @@
+making all in ./libvncauth...
+make[1]: Entering directory `/usr/local/share/vnc_unixsrc/libvncauth'
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I. -I../include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o vncauth.o vncauth.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I. -I../include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o d3des.o d3des.c
+rm -f libvncauth.a
+ar clq libvncauth.a vncauth.o d3des.o
+ranlib libvncauth.a
+make[1]: Leaving directory `/usr/local/share/vnc_unixsrc/libvncauth'
+making all in ./vncviewer...
+make[1]: Entering directory `/usr/local/share/vnc_unixsrc/vncviewer'
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o argsresources.o argsresources.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o caps.o caps.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o colour.o colour.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o cursor.o cursor.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o desktop.o desktop.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o dialogs.o dialogs.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o fullscreen.o fullscreen.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o listen.o listen.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o misc.o misc.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o popup.o popup.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o rfbproto.o rfbproto.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o selection.o selection.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o shm.o shm.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o sockets.o sockets.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o tunnel.o tunnel.c
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include -I. -I/usr/local/include -I/usr/local/include -I/usr/include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o vncviewer.o vncviewer.c
+rm -f vncviewer
+gcc -o vncviewer -O2 -fno-strength-reduce -fno-strict-aliasing      -L/usr/lib64   argsresources.o caps.o colour.o cursor.o desktop.o dialogs.o fullscreen.o listen.o misc.o popup.o rfbproto.o selection.o shm.o sockets.o tunnel.o vncviewer.o -lXaw -lXmu -lXt -lSM -lICE -lXpm  -lXext -lX11 ../libvncauth/libvncauth.a -L/usr/local/lib -lz -L/usr/local/lib -ljpeg      
+rm -f vncviewer._man
+if test -z "" ; then \
+	   cd `dirname vncviewer` && \
+	   ln -s `basename vncviewer.man` `basename vncviewer._man`; \
+	else \
+	      	     cpp -undef -traditional  -D__apploaddir__=/usr/share/X11/app-defaults -D__appmansuffix__=1x -D__filemansuffix__=5x -D__libmansuffix__=3x -D__miscmansuffix__=7 -D__drivermansuffix__=4 -D__adminmansuffix__=8 -D__projectroot__=/usr -D__xconfigfile__=xorg.conf -D__xconfigdir__=/usr/lib/X11 -D__xlogfile__=Xorg -D__xservername__=Xorg -D__xorgversion__="\"`echo 6 8 99 903 | sed -e 's/ /./g' -e 's/^/Version\\\ /'`\" \"X Version 11\"" -D__vendorversion__="`echo 6 8 99 903 | sed -e 's/ /./g' -e 's/^/Version\\\ /'` X.Org"  \
+	     < vncviewer.man | sed -e '/^#  *[0-9][0-9]*  *.*$/d' 			-e '/^#line  *[0-9][0-9]*  *.*$/d' 			-e '/^[ 	]*XCOMM$/s/XCOMM/#/' 			-e '/^[ 	]*XCOMM[^a-zA-Z0-9_]/s/XCOMM/#/' 			-e '/^[ 	]*XHASH/s/XHASH/#/' 			-e '/\@\@$/s/\@\@$/\\/' >vncviewer._man; \
+	fi
+make[1]: Leaving directory `/usr/local/share/vnc_unixsrc/vncviewer'
+making all in ./vncpasswd...
+make[1]: Entering directory `/usr/local/share/vnc_unixsrc/vncpasswd'
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing    -I../include  -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o vncpasswd.o vncpasswd.c
+rm -f vncpasswd
+gcc -o vncpasswd -O2 -fno-strength-reduce -fno-strict-aliasing      -L/usr/lib64   vncpasswd.o ../libvncauth/libvncauth.a      
+make[1]: Leaving directory `/usr/local/share/vnc_unixsrc/vncpasswd'
+making all in ./vncconnect...
+make[1]: Entering directory `/usr/local/share/vnc_unixsrc/vncconnect'
+gcc -O2 -fno-strength-reduce -fno-strict-aliasing      -I/usr/include    -Dlinux -D__amd64__ -D_POSIX_C_SOURCE=199309L 				-D_POSIX_SOURCE -D_XOPEN_SOURCE 				-D_BSD_SOURCE -D_SVID_SOURCE                                 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 				  				  -DFUNCPROTO=15 -DNARROWPROTO       -c -o vncconnect.o vncconnect.c
+vncconnect.c: In function ‘usage’:
+vncconnect.c:17: warning: incompatible implicit declaration of built-in function ‘exit’
+vncconnect.c: In function ‘main’:
+vncconnect.c:51: warning: incompatible implicit declaration of built-in function ‘exit’
+vncconnect.c:58: warning: incompatible implicit declaration of built-in function ‘strlen’
+rm -f vncconnect
+gcc -o vncconnect -O2 -fno-strength-reduce -fno-strict-aliasing      -L/usr/lib64   vncconnect.o -lXext -lX11      
+make[1]: Leaving directory `/usr/local/share/vnc_unixsrc/vncconnect'

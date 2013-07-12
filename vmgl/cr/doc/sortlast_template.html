@@ -1,0 +1,77 @@
+<!-- Copyright (c) 2001, Stanford University
+     All rights reserved.
+
+	 See the file LICENSE.txt for information on redistributing this software.  -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+<base target="new_window">
+<link rel="stylesheet" type="text/css" href="chromium.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+
+<h2 class="PageSubHeading">Sort-last Template</h2>
+
+<p>When you create a sort-last template you'll be prompted to enter
+the number of application (rendering) nodes and the desired window
+size (width and height in pixels).<p>
+
+<p>Clicking on the <em>Edit Template</em> button will open the sort-last
+editor, shown here:</p>
+
+<p align="center"><img border="0" src="sortlast_template.gif"></p>
+
+<p>The dialog lets you specify the window size, the number and names of
+the rendering nodes and set the readback and render SPU options</p>
+
+<p>
+<B>NOTE:</B> If you want the rendering window to be resizable, you need
+to enable the <B>Resizable window</B> option for both the Readback SPU and
+Render SPU.</p>
+
+
+
+<h2 class="PageSubHeading">Runtime Options</h2>
+
+<p>When you save your sort-last configuration to a file (such as
+<code>mysortlast.conf</code>) you'll have a stand-alone
+configuration script that you can run as follows:</p>
+
+<pre>
+   python mysortlast.conf
+</pre>
+
+<p>This configuration script will also accept the following optional
+command-line arguments:</p>
+
+<ul>
+<li><code>-w width</code>  specifies the image width in pixels
+<li><code>-h height</code>  specifies the image height in pixels
+<li><code>-s servers</code>  a comma-separated list of hosts for
+    the readaback SPUs.
+    This will also control the number of readback SPUs created.
+</ul>
+
+<p>You can also specify the name of the program to run as the last
+argument.
+</p>
+
+<p>For example:</p>
+
+<pre>
+   python mysortlast.conf -w 700 -h 600 -s "cr1,cr2,cr3" psubmit
+</pre>
+
+<p>Will run psubmit on 3 servers, drawing into a window of 700 x 600 pixels.
+</p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!-- Copyright (c) 2001, Stanford University
+     All rights reserved.
+
+	 See the file LICENSE.txt for information on redistributing this software.  -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+<link rel="stylesheet" type="text/css" href="chromium.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1 class="PageHeading">Configuring the server</h1>
+<p>This page provides a complete list of all the configuration parameters
+for the Chromium server.</p>
+<p>An example of setting a server parameter is:</p>
+<pre>
+	node = CRNetworkNode()
+	node.Conf('optimize_bucket', 0)
+</pre>
+<br>
+
+<table border="1" width="100%">
+  <tr class="ConfigTableHeader">
+    <td width="19%">Parameter Name</td>
+    <td width="12%">Type</td>
+    <td width="115%">Description</td>
+  </tr>
+    <td width="19%" class="ConfigOption">exit_if_no_clients</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       Determines whether or not the crserver exits when there are no more
+       client connections (or we'd otherwise deadlock on a synchronization
+       call.)
+       The default is 1 (true).
+    </td>
+  </tr>
+
+  </tr>
+    <td width="19%" class="ConfigOption">debug_barriers</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       When set, this option prints debugging information related to barriers.
+       The default is 0 (off).
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">ignore_papi</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       If set, the crserver passes barrier and semaphore functions through
+       to the head SPU, instead of processing them locally.  The default is
+       0 (off).
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">lightning2</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">If this flag is set, leave a
+	2-pixel wide gap between tiles, and draw the strip headers for
+	Lightning-2 for image reassembly.  Also, this flag will cause the
+	servers to use Lightning-2's back-channel communication to synchronize
+	their swapping.  Currently, this option is mostly unimplemented (only
+	the gaps are left).</td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">local_tile_spec</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       For warped tile sort.  XXX more info needed.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">only_swap_once</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">If this flag is set, 
+	the Chromium server will only execute swap and clear commands
+	from one of the connected clients (whichever connects first).
+	This greatly simplifies the design of a parallel application,
+	and allows parallel applications to run without modification using
+	sort-first or sort-last architectures.  When using sort-first,
+	this option should be used in conjunction with the <code>auto_barrier</code>
+	option in the <code>tilesort</code> SPU.  The default is <code>false</code>.</td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">optimize_bucket</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">If this flag is set, use a 
+	more complex algorithm to compute the set of intersected tiles when
+	a bounds_info packet arrives.  This is the same optimized algorithm
+	that is used by the tilesort SPU to determine tile overlaps.  This
+	algorithm <i>requires</i> that the tiles all be the same size.  The
+	default is 1.</td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">overlap_blending</td>
+    <td width="12%" class="ConfigType">String</td>
+    <td width="115%" class="ConfigDesc">
+		This option specifies which mode the blend geometry for warped tiles
+		(if any) should be used. The valid modes are:
+		<ul>
+		<li><B>'knockout'</B> - Only draw the overlap regions once. One server
+					will draw the region with full intensity, all others will
+					draw black
+		<li><B>'blend'</B> - Draw the overlap regions with various intensities,
+					based on how many tiles overlap the region. This doesn't 
+					behave as expected unless you have matched displays. However,
+					using the <code>'overlap_levels'</code> option below one can
+					achieve not-too-objectional results
+		</ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">overlap_levels</td>
+    <td width="12%" class="ConfigType">Array of floats</td>
+    <td width="115%" class="ConfigDesc">
+		This should be used with the <code>'blend'</code> mode of 
+		<code>'overlap_blending'</code>	above. The i-th index of the array 
+		indicates the intensity. Overlap regions outside of the specified
+		range will be drawn at full intensity.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">projection_matrix</td>
+    <td width="12%" class="ConfigType">List of 16 Floats</td>
+    <td width="115%" class="ConfigDesc">
+    Specifies a projection matrix to use instead of the normal OpenGL
+    projection matrix (for left view if in stereo mode).
+    Used for <a href="nonplanar.html">non-planar tilesort</a>.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">right_projection_matrix</td>
+    <td width="12%" class="ConfigType">List of 16 Floats</td>
+    <td width="115%" class="ConfigDesc">
+    Specifies a projection matrix to use instead of the normal OpenGL
+    projection matrix for right stereo views.
+    Used for <a href="nonplanar.html">non-planar tilesort</a>.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">right_view_matrix</td>
+    <td width="12%" class="ConfigType">List of 16 Floats</td>
+    <td width="115%" class="ConfigDesc">
+    Specifies a viewing matrix to premultiply onto the normal OpenGL
+    modelview matrix for right stereo views.
+    Used for <a href="nonplanar.html">non-planar tilesort</a>.
+    </td>
+  </tr>
+
+
+  <tr>
+    <td width="19%" class="ConfigOption">shared_display_lists</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       If zero, all clients connected to the server will get a private pool
+       of display list IDs.  If one, all clients connected to the server
+       will share a common pool of display list IDs.
+       The default is one (a shared pool of IDs).
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">shared_texture_objects</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       If zero, all clients connected to the server will get a private pool
+       of texture object IDs.  If one, all clients connected to the server
+       will share a common pool of texture object IDs.
+       The default is one (a shared pool of IDs).
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">shared_programs</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       If zero, all clients connected to the server will get a private pool
+       of program IDs.  If one, all clients connected to the server
+       will share a common pool of program IDs.
+       The default is one (a shared pool of IDs).
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">shared_windows</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       If true, clients will share windows on the server.
+       Otherwise, every client request for a new window will create a new
+       window that's never shared among clients.
+       Typically would be set for sort-last rendering, or parallel rendering
+       into one window.
+       The default is zero (no window sharing).
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">spu_dir</td>
+    <td width="12%" class="ConfigType">String</td>
+    <td width="115%" class="ConfigDesc">
+      This option specifies the directory to search for Chromium SPU DLLs.
+      Setting this option is equivalent to calling the
+      <code>appNode.SPUDir()</code> function.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">use_dmx</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+       This should be set to 1 when using DMX.  The default is 0.
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">vertprog_projection_param</td>
+    <td width="12%" class="ConfigType">String or Integer</td>
+    <td width="115%" class="ConfigDesc">
+       This option is useful for programs that use GL_NV_vertex_program
+       or GL_ARB_vertex_program (or Cg) on tilesort configurations.
+       <p>
+       Since tile sorting requires manipulating the projection matrix and
+       vertex programs may use projection parameters passed via generic
+       program parameters, Chromium may be unable to manipulate the projection
+       matrix in the normal manner.
+       This option allows one to give a hint to Chromium as to which program
+       parameters contain the projection matrix information.
+       <p>
+       If vertprog_projection_param is an integer N, then Chromium will
+       assume that (local) program parameters N through N+3 contain the
+       projection matrix.
+       <p>
+       If vertprog_projection_param is a string S and you're using Cg,
+       Chromium will look for S in the vertex program string comments (emitted
+       by Cg) and try to deduce which program parameters contain the
+       projection matrix.  In the Cg demo programs, the combined modelview and
+       projection matrix is usually named "ModelViewProj".
+       <p>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">view_matrix</td>
+    <td width="12%" class="ConfigType">List of 16 Floats</td>
+    <td width="115%" class="ConfigDesc">
+    Specifies a viewing matrix to premultiply onto the normal OpenGL
+    modelview matrix (for left view if in stereo mode).
+    Used for <a href="nonplanar.html">non-planar tilesort</a>.
+    </td>
+  </tr>
+
+
+</table>
+</body>
+
+</html>
+
+

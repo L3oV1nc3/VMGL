@@ -1,0 +1,5 @@
+autoscan: warning: missing AC_PROG_CC wanted by: 
+	vmgl_extproto.h
+	vmgl_ext.h
+autoscan: warning: missing AC_PROG_INSTALL wanted by: 
+	autogen.sh:9

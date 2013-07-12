@@ -1,0 +1,1844 @@
+Making all in doc
+Making all in include
+Making all in dix
+  CC    atom.o
+  CC    colormap.o
+  CC    cursor.o
+  CC    deprecated.o
+  CC    devices.o
+  CC    dispatch.o
+  CC    dixfonts.o
+  CC    dixutils.o
+  CC    enterleave.o
+  CC    events.o
+events.c: In function ‘DetachFromMaster’:
+events.c:1433: warning: cast to pointer from integer of different size
+events.c: In function ‘ReattachToOldMaster’:
+events.c:1449: warning: cast from pointer to integer of different size
+  CC    eventconvert.o
+  CC    extension.o
+  CC    ffs.o
+  CC    gc.o
+  CC    getevents.o
+  CC    globals.o
+  CC    glyphcurs.o
+  CC    grabs.o
+  CC    initatoms.o
+  CC    inpututils.o
+  CC    pixmap.o
+  CC    privates.o
+  CC    property.o
+  CC    ptrveloc.o
+  CC    registry.o
+  CC    resource.o
+  CC    selection.o
+  CC    swaprep.o
+  CC    swapreq.o
+  CC    tables.o
+  CC    window.o
+  LINK  libdix.la
+  CC    main.o
+  LINK  libmain.la
+Making all in fb
+  CC    fb24_32.o
+  CC    fballpriv.o
+  CC    fbarc.o
+  CC    fbbits.o
+  CC    fbblt.o
+  CC    fbbltone.o
+  CC    fbcopy.o
+  CC    fbfill.o
+  CC    fbfillrect.o
+  CC    fbfillsp.o
+  CC    fbgc.o
+  CC    fbgetsp.o
+  CC    fbglyph.o
+  CC    fbimage.o
+  CC    fbline.o
+  CC    fboverlay.o
+  CC    fbpict.o
+  CC    fbpixmap.o
+  CC    fbpoint.o
+  CC    fbpush.o
+  CC    fbscreen.o
+  CC    fbseg.o
+  CC    fbsetsp.o
+  CC    fbsolid.o
+  CC    fbstipple.o
+  CC    fbtile.o
+  CC    fbtrap.o
+  CC    fbutil.o
+  CC    fbwindow.o
+  LINK  libfb.la
+  CC    fb24_32.o
+  CC    fballpriv.o
+  CC    fbarc.o
+  CC    fbbits.o
+  CC    fbblt.o
+  CC    fbbltone.o
+  CC    fbcopy.o
+  CC    fbfill.o
+  CC    fbfillrect.o
+  CC    fbfillsp.o
+  CC    fbgc.o
+  CC    fbgetsp.o
+  CC    fbglyph.o
+  CC    fbimage.o
+  CC    fbline.o
+  CC    fboverlay.o
+  CC    fbpict.o
+  CC    fbpixmap.o
+  CC    fbpoint.o
+  CC    fbpush.o
+  CC    fbscreen.o
+  CC    fbseg.o
+  CC    fbsetsp.o
+  CC    fbsolid.o
+  CC    fbstipple.o
+  CC    fbtile.o
+  CC    fbtrap.o
+  CC    fbutil.o
+  CC    fbwindow.o
+  LINK  libwfb.la
+Making all in mi
+  CC    miarc.o
+  CC    mibank.o
+  CC    mibitblt.o
+  CC    mibstore.o
+  CC    micmap.o
+  CC    micopy.o
+  CC    micursor.o
+  CC    midash.o
+  CC    midispcur.o
+  CC    mieq.o
+  CC    miexpose.o
+  CC    mifillarc.o
+  CC    mifillrct.o
+  CC    mifpolycon.o
+  CC    migc.o
+  CC    miglblt.o
+  CC    mioverlay.o
+  CC    mipointer.o
+  CC    mipoly.o
+  CC    mipolycon.o
+  CC    mipolygen.o
+  CC    mipolypnt.o
+  CC    mipolyrect.o
+  CC    mipolyseg.o
+  CC    mipolytext.o
+  CC    mipolyutil.o
+  CC    mipushpxl.o
+  CC    miregion.o
+  CC    miscrinit.o
+  CC    mispans.o
+  CC    misprite.o
+  CC    mivaltree.o
+  CC    miwideline.o
+  CC    miwindow.o
+  CC    mizerarc.o
+  CC    mizerclip.o
+  CC    mizerline.o
+  LINK  libmi.la
+Making all in Xext
+  CC    bigreq.o
+  CC    geext.o
+  CC    shape.o
+  CC    sleepuntil.o
+  CC    sync.o
+  CC    xcmisc.o
+  CC    xtest.o
+xtest.c: In function ‘AllocXTestDevice’:
+xtest.c:647: warning: cast to pointer from integer of different size
+xtest.c:648: warning: cast to pointer from integer of different size
+xtest.c: In function ‘IsXTestDevice’:
+xtest.c:684: warning: cast from pointer to integer of different size
+  CC    shm.o
+  CC    panoramiX.o
+  CC    panoramiXprocs.o
+  CC    panoramiXSwap.o
+  CC    xace.o
+  CC    xvmain.o
+  CC    xvdisp.o
+  CC    xvmc.o
+  CC    xres.o
+  CC    saver.o
+  CC    dpms.o
+  LINK  libXext.la
+  LINK  libXextbuiltin.la
+  LINK  libXextmodule.la
+Making all in miext
+Making all in damage
+  CC    damage.o
+  LINK  libdamage.la
+Making all in shadow
+  CC    shadow.o
+  CC    shalloc.o
+  CC    shpacked.o
+  CC    shplanar8.o
+  CC    shplanar.o
+  CC    shrot16pack_180.o
+  CC    shrot16pack_270.o
+  CC    shrot16pack_270YX.o
+  CC    shrot16pack_90.o
+  CC    shrot16pack_90YX.o
+  CC    shrot16pack.o
+  CC    shrot32pack_180.o
+  CC    shrot32pack_270.o
+  CC    shrot32pack_90.o
+  CC    shrot32pack.o
+  CC    shrot8pack_180.o
+  CC    shrot8pack_270.o
+  CC    shrot8pack_90.o
+  CC    shrot8pack.o
+  CC    shrotate.o
+  LINK  libshadow.la
+Making all in cw
+  CC    cw.o
+  CC    cw_ops.o
+  CC    cw_render.o
+  LINK  libcw.la
+Making all in os
+  CC    WaitFor.o
+  CC    access.o
+  CC    auth.o
+  CC    backtrace.o
+backtrace.c: In function ‘xorg_backtrace’:
+backtrace.c:48: warning: assignment discards qualifiers from pointer target type
+backtrace.c:51: warning: pointer of type ‘void *’ used in subtraction
+backtrace.c:54: warning: pointer of type ‘void *’ used in subtraction
+  CC    connection.o
+/usr/include/X11/Xtrans/Xtransint.h:349: warning: ‘is_numeric’ declared ‘static’ but never defined
+/usr/include/X11/Xtrans/Xtransint.h:354: warning: ‘trans_mkdir’ declared ‘static’ but never defined
+  CC    io.o
+  CC    mitauth.o
+  CC    oscolor.o
+  CC    osinit.o
+  CC    utils.o
+  CC    strcasecmp.o
+  CC    strcasestr.o
+  CC    xdmauth.o
+  CC    xstrans.o
+  CC    xprintf.o
+  CC    log.o
+  CC    rpcauth.o
+  CC    xdmcp.o
+  CC    strlcat.o
+  CC    strlcpy.o
+  LINK  libos.la
+Making all in randr
+  CC    mirandr.o
+  CC    randr.o
+  CC    rrcrtc.o
+  CC    rrdispatch.o
+  CC    rrinfo.o
+  CC    rrmode.o
+  CC    rroutput.o
+  CC    rrpointer.o
+  CC    rrproperty.o
+  CC    rrscreen.o
+  CC    rrsdispatch.o
+  CC    rrtransform.o
+  CC    rrxinerama.o
+  LINK  librandr.la
+Making all in render
+  CC    animcur.o
+  CC    filter.o
+  CC    glyph.o
+  CC    matrix.o
+  CC    miindex.o
+  CC    mipict.o
+  CC    mirect.o
+  CC    mitrap.o
+  CC    mitri.o
+  CC    picture.o
+  CC    render.o
+  CC    renderedge.o
+  LINK  librender.la
+Making all in Xi
+  CC    allowev.o
+  CC    chgdctl.o
+  CC    chgfctl.o
+  CC    chgkbd.o
+  CC    chgkmap.o
+  CC    chgprop.o
+  CC    chgptr.o
+  CC    closedev.o
+  CC    devbell.o
+  CC    exevents.o
+  CC    extinit.o
+  CC    getbmap.o
+  CC    getdctl.o
+  CC    getfctl.o
+  CC    getfocus.o
+  CC    getkmap.o
+  CC    getmmap.o
+  CC    getprop.o
+  CC    getselev.o
+  CC    getvers.o
+  CC    grabdev.o
+  CC    grabdevb.o
+  CC    grabdevk.o
+  CC    gtmotion.o
+  CC    listdev.o
+  CC    opendev.o
+  CC    queryst.o
+  CC    selectev.o
+  CC    sendexev.o
+  CC    setbmap.o
+  CC    setdval.o
+  CC    setfocus.o
+  CC    setmmap.o
+  CC    setmode.o
+  CC    ungrdev.o
+  CC    ungrdevb.o
+  CC    ungrdevk.o
+  CC    xiallowev.o
+  CC    xichangecursor.o
+  CC    xichangehierarchy.o
+  CC    xigetclientpointer.o
+  CC    xigrabdev.o
+  CC    xipassivegrab.o
+  CC    xiproperty.o
+  CC    xiquerydevice.o
+  CC    xiquerypointer.o
+  CC    xiqueryversion.o
+  CC    xiselectev.o
+  CC    xisetclientpointer.o
+  CC    xisetdevfocus.o
+  CC    xiwarppointer.o
+  LINK  libXi.la
+Making all in xkb
+  CC    ddxBeep.o
+  CC    ddxCtrls.o
+  CC    ddxFakeMtn.o
+  CC    ddxLEDs.o
+  CC    ddxLoad.o
+  CC    ddxList.o
+  CC    ddxDevBtn.o
+  CC    xkb.o
+  CC    xkbUtils.o
+  CC    xkbEvents.o
+  CC    xkbAccessX.o
+  CC    xkbSwap.o
+  CC    xkbLEDs.o
+  CC    xkbInit.o
+  CC    xkbActions.o
+  CC    xkbPrKeyEv.o
+  CC    maprules.o
+  CC    xkmread.o
+  CC    xkbtext.o
+  CC    xkbfmisc.o
+  CC    xkbout.o
+  CC    XKBMisc.o
+  CC    XKBAlloc.o
+  CC    XKBGAlloc.o
+  CC    XKBMAlloc.o
+  LINK  libxkb.la
+  CC    ddxVT.o
+  CC    ddxPrivate.o
+  CC    ddxKillSrv.o
+  LINK  libxkbstubs.la
+Making all in dbe
+  CC    dbe.o
+  CC    midbe.o
+  LINK  libdbe.la
+Making all in xfixes
+  CC    cursor.o
+  CC    region.o
+  CC    saveset.o
+  CC    select.o
+  CC    xfixes.o
+  LINK  libxfixes.la
+Making all in damageext
+  CC    damageext.o
+  LINK  libdamageext.la
+Making all in composite
+  CC    compalloc.o
+  CC    compext.o
+  CC    compinit.o
+  CC    compoverlay.o
+  CC    compwindow.o
+compwindow.c: In function ‘compRepaintBorder’:
+compwindow.c:96: warning: cast from pointer to integer of different size
+compwindow.c: In function ‘compSetPixmapVisitWindow’:
+compwindow.c:127: warning: cast to pointer from integer of different size
+  LINK  libcomposite.la
+Making all in glx
+  CC    indirect_dispatch.o
+  CC    indirect_dispatch_swap.o
+  CC    indirect_reqsize.o
+  CC    indirect_size_get.o
+  CC    indirect_table.o
+  CC    glapi.o
+  CC    glthread.o
+  CC    indirect_util.o
+  CC    indirect_program.o
+  CC    indirect_texture_compression.o
+indirect_texture_compression.c: In function ‘__glXDispSwap_GetCompressedTexImageARB’:
+indirect_texture_compression.c:95: warning: ‘answer’ may be used uninitialized in this function
+indirect_texture_compression.c: In function ‘__glXDisp_GetCompressedTexImageARB’:
+indirect_texture_compression.c:55: warning: ‘answer’ may be used uninitialized in this function
+  CC    glxcmds.o
+glxcmds.c: In function ‘__glXDisp_BindSwapBarrierSGIX’:
+glxcmds.c:2061: warning: cast to pointer from integer of different size
+  CC    glxcmdsswap.o
+  CC    glxext.o
+  CC    glxdriswrast.o
+  CC    glxdricommon.o
+  CC    glxscreens.o
+  CC    render2.o
+render2.c: In function ‘__glXDisp_Map2d’:
+render2.c:127: warning: ‘u1’ may be used uninitialized in this function
+render2.c: In function ‘__glXDisp_Map1d’:
+render2.c:90: warning: ‘u1’ may be used uninitialized in this function
+  CC    render2swap.o
+  CC    renderpix.o
+  CC    renderpixswap.o
+  CC    rensize.o
+  CC    single2.o
+  CC    single2swap.o
+  CC    singlepix.o
+  CC    singlepixswap.o
+  CC    singlesize.o
+  CC    swap_interval.o
+  CC    xfont.o
+  LINK  libglx.la
+  CC    glxdri.o
+  CC    extension_string.o
+  CC    glxdri2.o
+  LINK  libglxdri.la
+Making all in exa
+  CC    exa.o
+  CC    exa_classic.o
+  CC    exa_migration_classic.o
+  CC    exa_driver.o
+  CC    exa_mixed.o
+  CC    exa_migration_mixed.o
+  CC    exa_accel.o
+  CC    exa_glyphs.o
+  CC    exa_offscreen.o
+  CC    exa_render.o
+  CC    exa_unaccel.o
+  LINK  libexa.la
+Making all in config
+  CC    config.o
+  CC    dbus-core.o
+  CC    hal.o
+  LINK  libconfig.la
+Making all in hw
+Making all in xfree86
+Making all in common
+  CC    xf86Configure.o
+  CC    xf86ShowOpts.o
+  CC    xf86Bus.o
+  CC    xf86Config.o
+  CC    xf86Cursor.o
+  CC    xf86DGA.o
+  CC    xf86DPMS.o
+  CC    xf86Events.o
+  CC    xf86Globals.o
+  CC    xf86AutoConfig.o
+  CC    xf86Option.o
+  CC    xf86Init.o
+  CC    xf86VGAarbiter.o
+  CC    xf86VidMode.o
+  CC    xf86fbman.o
+  CC    xf86cmap.o
+  CC    xf86Helper.o
+  CC    xf86PM.o
+  CC    xf86Xinput.o
+  CC    xisb.o
+  CC    xf86Mode.o
+xf86Mode.c: In function ‘xf86CheckModeForDriver’:
+xf86Mode.c:986: warning: passing argument 1 of ‘modeInClockRange’ from incompatible pointer type
+xf86Mode.c:253: note: expected ‘ClockRangePtr’ but argument is of type ‘ClockRangesPtr’
+xf86Mode.c:1002: warning: passing argument 1 of ‘modeInClockRange’ from incompatible pointer type
+xf86Mode.c:253: note: expected ‘ClockRangePtr’ but argument is of type ‘ClockRangesPtr’
+  CC    xorgHelper.o
+  CC    xf86xv.o
+  CC    xf86xvmc.o
+  CC    xf86pciBus.o
+  CC    xf86fbBus.o
+  CC    xf86noBus.o
+  CC    xf86RandR.o
+xf86RandR.c: In function ‘xf86RandRSetConfig’:
+xf86RandR.c:310: warning: ‘miPointerCurrentScreen’ is deprecated (declared at ../../../mi/mipointer.h:114)
+  CC    xf86DefModeSet.o
+  LINK  libcommon.la
+Making all in ddc
+  CC    ddc.o
+  CC    interpret_edid.o
+  CC    print_edid.o
+  CC    ddcProperty.o
+  LINK  libddc.la
+Making all in i2c
+  CC    bt829.o
+  CC    bt829_module.o
+  LINK  bt829_drv.la
+  CC    fi1236.o
+  CC    fi1236_module.o
+  LINK  fi1236_drv.la
+  CC    msp3430.o
+  CC    msp3430_module.o
+  LINK  msp3430_drv.la
+  CC    tda8425.o
+  CC    tda8425_module.o
+  LINK  tda8425_drv.la
+  CC    tda9850.o
+  CC    tda9850_module.o
+  LINK  tda9850_drv.la
+  CC    tda9885.o
+  CC    tda9885_module.o
+  LINK  tda9885_drv.la
+  CC    uda1380.o
+  CC    uda1380_module.o
+  LINK  uda1380_drv.la
+  CC    xf86i2c.o
+  LINK  libi2c.la
+Making all in x86emu
+  CC    debug.o
+  CC    decode.o
+  CC    fpu.o
+  CC    ops2.o
+  CC    ops.o
+  CC    prim_ops.o
+  CC    sys.o
+  LINK  libx86emu.la
+Making all in int10
+  CC    helper_exec.o
+helper_exec.c: In function ‘port_rep_inb’:
+helper_exec.c:223: warning: format ‘%ld’ expects type ‘long int’, but argument 3 has type ‘CARD32’
+helper_exec.c:223: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 4 has type ‘CARD32’
+helper_exec.c: In function ‘port_rep_inw’:
+helper_exec.c:239: warning: format ‘%ld’ expects type ‘long int’, but argument 3 has type ‘CARD32’
+helper_exec.c:239: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 4 has type ‘CARD32’
+helper_exec.c: In function ‘port_rep_inl’:
+helper_exec.c:255: warning: format ‘%ld’ expects type ‘long int’, but argument 3 has type ‘CARD32’
+helper_exec.c:255: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 4 has type ‘CARD32’
+helper_exec.c: In function ‘port_rep_outb’:
+helper_exec.c:271: warning: format ‘%ld’ expects type ‘long int’, but argument 3 has type ‘CARD32’
+helper_exec.c:271: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 4 has type ‘CARD32’
+helper_exec.c: In function ‘port_rep_outw’:
+helper_exec.c:287: warning: format ‘%ld’ expects type ‘long int’, but argument 3 has type ‘CARD32’
+helper_exec.c:287: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 4 has type ‘CARD32’
+helper_exec.c: In function ‘port_rep_outl’:
+helper_exec.c:303: warning: format ‘%ld’ expects type ‘long int’, but argument 3 has type ‘CARD32’
+helper_exec.c:303: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 4 has type ‘CARD32’
+helper_exec.c: In function ‘x_inl’:
+helper_exec.c:412: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 3 has type ‘CARD32’
+helper_exec.c: In function ‘x_outl’:
+helper_exec.c:422: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 3 has type ‘CARD32’
+helper_exec.c: In function ‘pciCfg1in’:
+helper_exec.c:503: warning: format ‘%#lx’ expects type ‘long unsigned int’, but argument 2 has type ‘CARD32’
+helper_exec.c:503: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 3 has type ‘CARD32’
+helper_exec.c: In function ‘pciCfg1out’:
+helper_exec.c:518: warning: format ‘%#lx’ expects type ‘long unsigned int’, but argument 2 has type ‘CARD32’
+helper_exec.c:518: warning: format ‘%8.8lx’ expects type ‘long unsigned int’, but argument 3 has type ‘CARD32’
+helper_exec.c: In function ‘pciCfg1inw’:
+helper_exec.c:542: warning: format ‘%#lx’ expects type ‘long unsigned int’, but argument 2 has type ‘CARD32’
+helper_exec.c: In function ‘pciCfg1outw’:
+helper_exec.c:563: warning: format ‘%#lx’ expects type ‘long unsigned int’, but argument 2 has type ‘CARD32’
+helper_exec.c: In function ‘pciCfg1inb’:
+helper_exec.c:587: warning: format ‘%#lx’ expects type ‘long unsigned int’, but argument 2 has type ‘CARD32’
+helper_exec.c: In function ‘pciCfg1outb’:
+helper_exec.c:608: warning: format ‘%#lx’ expects type ‘long unsigned int’, but argument 2 has type ‘CARD32’
+  CC    helper_mem.o
+  CC    xf86int10.o
+  CC    xf86int10module.o
+  CC    xf86x86emu.o
+  CC    generic.o
+  CC    x86emu.o
+  LINK  libint10.la
+Making all in fbdevhw
+  CC    fbdevhw.o
+  LINK  libfbdevhw.la
+Making all in os-support
+Making all in bus
+  CC    Pci.o
+  CC    linuxPci.o
+linuxPci.c: In function ‘xf86MapLegacyIO’:
+linuxPci.c:448: warning: cast to pointer from integer of different size
+  LINK  libbus.la
+Making all in linux
+  CC    lnx_init.o
+  CC    lnx_video.o
+  CC    lnx_agp.o
+lnx_agp.c: In function ‘xf86DeallocateGARTMemory’:
+lnx_agp.c:267: warning: cast to pointer from integer of different size
+  CC    lnx_kmod.o
+  CC    lnx_bell.o
+  CC    bios_mmap.o
+  CC    VTsw_usl.o
+  CC    posix_tty.o
+  CC    vidmem.o
+  CC    sigio.o
+  CC    lnx_acpi.o
+  CC    lnx_apm.o
+  LINK  liblinux.la
+copying selected object files to avoid basename conflicts...
+Making all in misc
+  CC    SlowBcopy.o
+  LINK  libmisc.la
+  CC    xorgos.o
+  LINK  libxorgos.la
+Making all in parser
+  CC    Device.o
+  CC    Files.o
+  CC    Flags.o
+  CC    Input.o
+  CC    Layout.o
+  CC    Module.o
+  CC    Video.o
+  CC    Monitor.o
+  CC    Pointer.o
+  CC    Screen.o
+  CC    Vendor.o
+  CC    read.o
+  CC    scan.o
+  CC    write.o
+  CC    DRI.o
+  CC    Extensions.o
+  LINK  libxf86config_internal.la
+Making all in ramdac
+  CC    xf86RamDac.o
+  CC    xf86RamDacCmap.o
+  CC    xf86Cursor.o
+  CC    xf86HWCurs.o
+  CC    IBM.o
+  CC    BT.o
+  CC    TI.o
+  CC    xf86BitOrder.o
+  LINK  libramdac.la
+Making all in shadowfb
+  CC    sfbmodule.o
+  CC    shadow.o
+  LINK  libshadowfb.la
+Making all in vbe
+  CC    vbe.o
+  CC    vbeModes.o
+  CC    vbe_module.o
+  LINK  libvbe.la
+Making all in vgahw
+  CC    vgaHW.o
+  CC    vgaHWmodule.o
+  LINK  libvgahw.la
+Making all in xaa
+  CC    xaaInit.o
+  CC    xaaGC.o
+  CC    xaaInitAccel.o
+  CC    xaaFallback.o
+  CC    xaaBitBlt.o
+  CC    xaaCpyArea.o
+  CC    xaaGCmisc.o
+  CC    xaaCpyWin.o
+  CC    xaaCpyPlane.o
+  CC    xaaFillRect.o
+  CC    xaaTEText.o
+  CC    xaaNonTEText.o
+  CC    xaaPCache.o
+  CC    xaaSpans.o
+  CC    xaaROP.o
+  CC    xaaImage.o
+  CC    xaaWrapper.o
+  CC    xaaRect.o
+  CC    xaaLineMisc.o
+  CC    xaaBitOrder.o
+  CC    xaaFillPoly.o
+  CC    xaaWideLine.o
+  CC    xaaTables.o
+  CC    xaaFillArc.o
+  CC    xaaLine.o
+  CC    xaaDashLine.o
+  CC    xaaOverlay.o
+  CC    xaaOffscreen.o
+  CC    xaaOverlayDF.o
+  CC    xaaStateChange.o
+  CC    xaaPict.o
+  CC    s-xaaLine.o
+  CC    s-xaaDashLine.o
+  CC    l-xaaBitmap.o
+  CC    l-xaaStipple.o
+  CC    l-xaaTEGlyph.o
+  CC    m-xaaBitmap.o
+  CC    m-xaaStipple.o
+  CC    m-xaaTEGlyph.o
+  CC    lf-xaaBitmap.o
+  CC    lf-xaaStipple.o
+  CC    lf-xaaTEGlyph.o
+  CC    mf-xaaBitmap.o
+  CC    mf-xaaStipple.o
+  CC    mf-xaaTEGlyph.o
+  CC    l3-xaaBitmap.o
+  CC    l3-xaaStipple.o
+  CC    m3-xaaBitmap.o
+  CC    m3-xaaStipple.o
+  CC    lf3-xaaBitmap.o
+  CC    lf3-xaaStipple.o
+  CC    mf3-xaaBitmap.o
+  CC    mf3-xaaStipple.o
+  LINK  libxaa.la
+Making all in xf8_16bpp
+  CC    xf8_16module.o
+  LINK  libxf8_16bpp.la
+Making all in loader
+  CC    loader.o
+  CC    loadext.o
+  CC    loadmod.o
+  CC    dlloader.o
+  CC    os.o
+  CC    sdksyms.o
+  LINK  libloader.la
+Making all in dixmods
+Making all in extmod
+  CC    modinit.o
+  CC    xf86dga2.o
+  CC    xf86vmode.o
+  CC    xvmod.o
+  LINK  libextmod.la
+  CC    dbemodule.o
+  LINK  libdbe.la
+  CC    glxmodule.o
+  LINK  libglx.la
+  CC    vmglmod.o
+  CC    VMGLExtension.o
+VMGLExtension.c:73: warning: function declaration isn’t a prototype
+VMGLExtension.c:74: warning: function declaration isn’t a prototype
+VMGLExtension.c: In function ‘IP2String’:
+VMGLExtension.c:83: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘SendWindowClipList’:
+VMGLExtension.c:93: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘findWindow’:
+VMGLExtension.c:128: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c:170: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘VMGLDestroyWindow’:
+VMGLExtension.c:195: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘VMGLClipNotify’:
+VMGLExtension.c:230: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c:244: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c:248: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘RemoveGlStub’:
+VMGLExtension.c:271: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘AddGlStub’:
+VMGLExtension.c:309: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘DepthSearchHelper’:
+VMGLExtension.c:370: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘DepthSearch’:
+VMGLExtension.c:395: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘AddWindowWatch’:
+VMGLExtension.c:414: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c:483: warning: suggest parentheses around assignment used as truth value
+VMGLExtension.c: In function ‘VMGLInitSrv’:
+VMGLExtension.c:498: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘VMGLWatchWindowSrv’:
+VMGLExtension.c:521: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘VMGLResetSrv’:
+VMGLExtension.c:545: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘NormalDispatcher’:
+VMGLExtension.c:569: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘SwappedVMGLInitSrv’:
+VMGLExtension.c:587: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘SwappedVMGLWatchWindowSrv’:
+VMGLExtension.c:601: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘SwappedVMGLResetSrv’:
+VMGLExtension.c:617: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: In function ‘SwappedDispatcher’:
+VMGLExtension.c:631: warning: ISO C90 forbids mixed declarations and code
+VMGLExtension.c: At top level:
+VMGLExtension.c:653: warning: no previous prototype for ‘VMGLExtensionInit’
+VMGLExtension.c: In function ‘VMGLExtensionInit’:
+VMGLExtension.c:656: warning: ISO C90 forbids mixed declarations and code
+  LINK  libvmglext.la
+  CC    fbcmap_mi.o
+  CC    fbmodule.o
+  LINK  libfb.la
+  CC    fbcmap_mi.o
+  CC    fbmodule.o
+  LINK  libwfb.la
+  CC    shmodule.o
+  LINK  libshadow.la
+  CC    miinitext.o
+  LINK  libdixmods.la
+  CC    xkbVT.o
+  CC    xkbPrivate.o
+  CC    xkbKillSrv.o
+  LINK  libxorgxkb.la
+Making all in exa
+  CC    examodule.o
+  LINK  libexa.la
+Making all in modes
+  CC    xf86Crtc.o
+  CC    xf86Cursors.o
+  CC    xf86cvt.o
+  CC    xf86gtf.o
+  CC    xf86DisplayIDModes.o
+  CC    xf86EdidModes.o
+  CC    xf86Modes.o
+  CC    xf86RandR12.o
+  CC    xf86Rotate.o
+  CC    xf86DiDGA.o
+  LINK  libxf86modes.la
+Making all in dri
+  CC    dri.o
+dri.c: In function ‘DRIScreenInit’:
+dri.c:431: warning: cast from pointer to integer of different size
+dri.c: In function ‘DRICreateDrawable’:
+dri.c:1280: warning: cast to pointer from integer of different size
+dri.c: In function ‘DRIDestroyDrawable’:
+dri.c:1351: warning: cast to pointer from integer of different size
+dri.c: In function ‘DRIDrawablePrivDelete’:
+dri.c:1367: warning: cast from pointer to integer of different size
+  CC    drimodule.o
+  CC    xf86dri.o
+  LINK  libdri.la
+Making all in dri2
+  CC    dri2.o
+  CC    dri2ext.o
+  LINK  libdri2.la
+Making all in utils
+Making all in gtf
+  CC    gtf-gtf.o
+  LINK  gtf
+Making all in cvt
+  CC    cvt-cvt.o
+  CC    cvt-xf86cvt.o
+  LINK  cvt
+Making all in doc
+Making all in man
+  CC    libxorg.o
+  LINK  libxorg.la
+copying selected object files to avoid basename conflicts...
+  CC    xorg.o
+  LINK  Xorg
+Making all in vfb
+  CC    libfbcmap_a-fbcmap_mi.o
+  CC    InitInput.o
+  CC    InitOutput.o
+  CC    dpmsstubs.o
+  CC    stubs.o
+  CC    miinitext.o
+  LINK  Xvfb
+Making all in xnest
+  CC    libfbcmap_a-fbcmap_mi.o
+  CC    Args.o
+  CC    Color.o
+  CC    Cursor.o
+  CC    Display.o
+  CC    Events.o
+  CC    Font.o
+  CC    GC.o
+  CC    GCOps.o
+  CC    Handlers.o
+  CC    Init.o
+  CC    Keyboard.o
+  CC    Pixmap.o
+  CC    Pointer.o
+  CC    Screen.o
+  CC    Visual.o
+  CC    Window.o
+  CC    dpmsstubs.o
+  CC    stubs.o
+  CC    miinitext.o
+  LINK  Xnest
+Making all in dmx
+Making all in input
+  CC    ChkNotMaskEv.o
+  CC    lnx-keyboard.o
+  CC    lnx-ms.o
+  CC    lnx-ps2.o
+  CC    usb-keyboard.o
+  CC    usb-mouse.o
+  CC    usb-other.o
+  CC    usb-common.o
+  CC    dmxdummy.o
+  CC    dmxbackend.o
+  CC    dmxconsole.o
+  CC    dmxcommon.o
+dmxcommon.c: In function ‘dmxCommonOthGetInfo’:
+dmxcommon.c:379: warning: passing argument 1 of ‘XSetExtensionErrorHandler’ from incompatible pointer type
+/usr/include/X11/extensions/Xext.h:41: note: expected ‘XextErrorHandler’ but argument is of type ‘int (*)(struct Display *, char *, char *)’
+dmxcommon.c:379: warning: assignment from incompatible pointer type
+dmxcommon.c:381: warning: passing argument 1 of ‘XSetExtensionErrorHandler’ from incompatible pointer type
+/usr/include/X11/extensions/Xext.h:41: note: expected ‘XextErrorHandler’ but argument is of type ‘int (*)(struct Display *, char *, char *)’
+  CC    dmxinputinit.o
+dmxinputinit.c: In function ‘dmxBlockHandler’:
+dmxinputinit.c:616: warning: cast from pointer to integer of different size
+dmxinputinit.c: In function ‘dmxWakeupHandler’:
+dmxinputinit.c:643: warning: cast from pointer to integer of different size
+dmxinputinit.c: In function ‘dmxInputScanForExtensions’:
+dmxinputinit.c:848: warning: passing argument 1 of ‘XSetExtensionErrorHandler’ from incompatible pointer type
+/usr/include/X11/extensions/Xext.h:41: note: expected ‘XextErrorHandler’ but argument is of type ‘int (*)(struct Display *, char *, char *)’
+dmxinputinit.c:848: warning: assignment from incompatible pointer type
+dmxinputinit.c:850: warning: passing argument 1 of ‘XSetExtensionErrorHandler’ from incompatible pointer type
+/usr/include/X11/extensions/Xext.h:41: note: expected ‘XextErrorHandler’ but argument is of type ‘int (*)(struct Display *, char *, char *)’
+dmxinputinit.c:842: warning: unused variable ‘dmxLocal’
+dmxinputinit.c: In function ‘dmxInputInit’:
+dmxinputinit.c:1077: warning: cast to pointer from integer of different size
+dmxinputinit.c: At top level:
+dmxinputinit.c:135: warning: ‘DMXCommonOth’ defined but not used
+  CC    dmxarg.o
+  CC    dmxsigio.o
+  CC    dmxevents.o
+  CC    dmxxinput.o
+dmxxinput.c:56: warning: no previous prototype for ‘ChangeKeyboardDevice’
+dmxxinput.c:80: warning: no previous prototype for ‘ChangePointerDevice’
+  CC    dmxmotion.o
+  CC    dmxmap.o
+Making all in config
+  CC    parser.o
+  CC    scanner.o
+scanner.c:1253: warning: ‘yyunput’ defined but not used
+scanner.c:1294: warning: ‘input’ defined but not used
+  CC    dmxparse.o
+  CC    dmxprint.o
+  CC    dmxcompat.o
+  CC    dmxconfig.o
+  CC    xdmxconfig-xdmxconfig.o
+xdmxconfig.c: In function ‘dmxConfigCanvasDraw’:
+xdmxconfig.c:299: warning: ‘maxHeight’ may be used uninitialized in this function
+  CC    xdmxconfig-dmxlog.o
+  CC    xdmxconfig-Canvas.o
+  LINK  xdmxconfig
+  CC    vdltodmx.o
+  LINK  vdltodmx
+  CC    dmxtodmx.o
+  LINK  dmxtodmx
+Making all in examples
+  CC    xdmx-xdmx.o
+  LINK  xdmx
+  CC    dmxwininfo-dmxwininfo.o
+  LINK  dmxwininfo
+  CC    dmxreconfig-dmxreconfig.o
+  LINK  dmxreconfig
+  CC    dmxresize-dmxresize.o
+  LINK  dmxresize
+  CC    dmxaddscreen-dmxaddscreen.o
+  LINK  dmxaddscreen
+  CC    dmxrmscreen-dmxrmscreen.o
+  LINK  dmxrmscreen
+  CC    dmxaddinput-dmxaddinput.o
+  LINK  dmxaddinput
+  CC    dmxrminput-dmxrminput.o
+  LINK  dmxrminput
+  CC    xinput-xinput.o
+  LINK  xinput
+  CC    xtest-xtest.o
+  LINK  xtest
+  CC    evi-evi.o
+  LINK  evi
+  CC    res-res.o
+  LINK  res
+  CC    xled-xled.o
+  LINK  xled
+  CC    xbell-xbell.o
+  LINK  xbell
+  CC    ev-ev.o
+  LINK  ev
+Making all in glxProxy
+  CC    compsize.o
+compsize.c:33: warning: no previous prototype for ‘__glFogiv_size’
+compsize.c:47: warning: no previous prototype for ‘__glFogfv_size’
+compsize.c:52: warning: no previous prototype for ‘__glCallLists_size’
+compsize.c:74: warning: no previous prototype for ‘__glDrawPixels_size’
+compsize.c:151: warning: no previous prototype for ‘__glBitmap_size’
+compsize.c:156: warning: no previous prototype for ‘__glTexGendv_size’
+compsize.c:169: warning: no previous prototype for ‘__glTexGenfv_size’
+compsize.c:174: warning: no previous prototype for ‘__glTexGeniv_size’
+compsize.c:179: warning: no previous prototype for ‘__glTexParameterfv_size’
+compsize.c:202: warning: no previous prototype for ‘__glTexParameteriv_size’
+compsize.c:207: warning: no previous prototype for ‘__glTexEnvfv_size’
+compsize.c:219: warning: no previous prototype for ‘__glTexEnviv_size’
+compsize.c:224: warning: no previous prototype for ‘__glTexImage1D_size’
+compsize.c:300: warning: no previous prototype for ‘__glTexImage2D_size’
+compsize.c:377: warning: no previous prototype for ‘__glTexImage3D_size’
+compsize.c:456: warning: no previous prototype for ‘__glLightfv_size’
+compsize.c:474: warning: no previous prototype for ‘__glLightiv_size’
+compsize.c:479: warning: no previous prototype for ‘__glLightModelfv_size’
+compsize.c:491: warning: no previous prototype for ‘__glLightModeliv_size’
+compsize.c:496: warning: no previous prototype for ‘__glMaterialfv_size’
+compsize.c:511: warning: no previous prototype for ‘__glMaterialiv_size’
+compsize.c:516: warning: no previous prototype for ‘__glColorTableParameterfv_size’
+compsize.c:536: warning: no previous prototype for ‘__glColorTableParameteriv_size’
+compsize.c:541: warning: no previous prototype for ‘__glConvolutionParameterfv_size’
+compsize.c:555: warning: no previous prototype for ‘__glConvolutionParameteriv_size’
+  CC    g_disptab.o
+  CC    global.o
+  CC    glxcmds.o
+glxcmds.c:78: warning: no previous prototype for ‘GetBackEndDisplay’
+glxcmds.c: In function ‘CreateContext’:
+glxcmds.c:137: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: At top level:
+glxcmds.c:386: warning: no previous prototype for ‘__glXCreateContextWithConfigSGIX’
+glxcmds.c:395: warning: no previous prototype for ‘__glXQueryMaxSwapBarriersSGIX’
+glxcmds.c:417: warning: no previous prototype for ‘__glXBindSwapBarrierSGIX’
+glxcmds.c: In function ‘__glXBindSwapBarrierSGIX’:
+glxcmds.c:428: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:434: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: At top level:
+glxcmds.c:447: warning: no previous prototype for ‘__glXJoinSwapGroupSGIX’
+glxcmds.c: In function ‘__glXJoinSwapGroupSGIX’:
+glxcmds.c:458: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:464: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:478: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:484: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXDestroyContext’:
+glxcmds.c:513: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: At top level:
+glxcmds.c:625: warning: no previous prototype for ‘GetCurrentBackEndTag’
+glxcmds.c: In function ‘MakeCurrent’:
+glxcmds.c:760: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:810: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:834: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:855: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:916: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:938: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:958: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:1099: warning: ‘SecurityLookupIDByClass’ is deprecated (declared at ../../../include/resource.h:268)
+glxcmds.c:1105: warning: ‘SecurityLookupIDByClass’ is deprecated (declared at ../../../include/resource.h:268)
+glxcmds.c: At top level:
+glxcmds.c:1293: warning: no previous prototype for ‘__glXMakeCurrentReadSGI’
+glxcmds.c: In function ‘__glXIsDirect’:
+glxcmds.c:1311: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXCopyContext’:
+glxcmds.c:1457: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:1462: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘CreateGLXPixmap’:
+glxcmds.c:1649: warning: comparison between pointer and integer
+glxcmds.c:1649: warning: comparison between pointer and integer
+glxcmds.c:1757: warning: ‘SecurityLookupIDByClass’ is deprecated (declared at ../../../include/resource.h:268)
+glxcmds.c: In function ‘__glXDestroyGLXPixmap’:
+glxcmds.c:1878: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: At top level:
+glxcmds.c:1923: warning: no previous prototype for ‘__glXDoSwapBuffers’
+glxcmds.c: In function ‘__glXDoSwapBuffers’:
+glxcmds.c:1961: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:1973: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:2003: warning: ‘SecurityLookupIDByClass’ is deprecated (declared at ../../../include/resource.h:268)
+glxcmds.c: In function ‘__glXSwapBuffers’:
+glxcmds.c:2108: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:2119: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXUseXFont’:
+glxcmds.c:2628: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:2630: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXGetFBConfigs’:
+glxcmds.c:2704: warning: unused variable ‘swapEnd’
+glxcmds.c:2704: warning: unused variable ‘swapPC’
+glxcmds.c: In function ‘__glXCreateWindow’:
+glxcmds.c:2945: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXDestroyWindow’:
+glxcmds.c:2981: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXQueryContext’:
+glxcmds.c:3005: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXQueryContextInfoEXT’:
+glxcmds.c:3050: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../../include/resource.h:261)
+glxcmds.c: In function ‘__glXDestroyPbuffer’:
+glxcmds.c:3215: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c: In function ‘__glXGetDrawableAttributes’:
+glxcmds.c:3287: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:3297: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:3306: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:3334: warning: ‘SecurityLookupIDByClass’ is deprecated (declared at ../../../include/resource.h:268)
+glxcmds.c: In function ‘__glXChangeDrawableAttributes’:
+glxcmds.c:3448: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:3458: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:3467: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxcmds.c:3495: warning: ‘SecurityLookupIDByClass’ is deprecated (declared at ../../../include/resource.h:268)
+glxcmds.c:3426: warning: unused variable ‘pXinReadDraw’
+glxcmds.c:3423: warning: unused variable ‘attrbuf’
+glxcmds.c:3421: warning: ‘screen’ may be used uninitialized in this function
+glxcmds.c: In function ‘__glXGetDrawableAttributes’:
+glxcmds.c:3260: warning: ‘screen’ may be used uninitialized in this function
+glxcmds.c:3263: warning: ‘attribs_size’ may be used uninitialized in this function
+glxcmds.c: In function ‘CreateGLXPixmap’:
+glxcmds.c:1627: warning: ‘pGlxScreen’ may be used uninitialized in this function
+glxcmds.c: In function ‘CreateContext’:
+glxcmds.c:109: warning: ‘be_vid’ may be used uninitialized in this function
+glxcmds.c:110: warning: ‘be_fbconfigId’ may be used uninitialized in this function
+  CC    glxcmdsswap.o
+glxcmdsswap.c: In function ‘__glXSwapCreateContext’:
+glxcmdsswap.c:55: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:55: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapCreateNewContext’:
+glxcmdsswap.c:69: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:69: warning: unused variable ‘swapPC’
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:80: warning: no previous prototype for ‘__glXSwapCreateContextWithConfigSGIX’
+glxcmdsswap.c: In function ‘__glXSwapCreateContextWithConfigSGIX’:
+glxcmdsswap.c:91: warning: implicit declaration of function ‘__glXCreateContextWithConfigSGIX’
+glxcmdsswap.c:91: warning: nested extern declaration of ‘__glXCreateContextWithConfigSGIX’
+glxcmdsswap.c:83: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:83: warning: unused variable ‘swapPC’
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:94: warning: no previous prototype for ‘__glXSwapQueryMaxSwapBarriersSGIX’
+glxcmdsswap.c: In function ‘__glXSwapQueryMaxSwapBarriersSGIX’:
+glxcmdsswap.c:103: warning: implicit declaration of function ‘__glXQueryMaxSwapBarriersSGIX’
+glxcmdsswap.c:103: warning: nested extern declaration of ‘__glXQueryMaxSwapBarriersSGIX’
+glxcmdsswap.c:98: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:98: warning: unused variable ‘swapPC’
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:106: warning: no previous prototype for ‘__glXSwapBindSwapBarrierSGIX’
+glxcmdsswap.c: In function ‘__glXSwapBindSwapBarrierSGIX’:
+glxcmdsswap.c:115: warning: implicit declaration of function ‘__glXBindSwapBarrierSGIX’
+glxcmdsswap.c:115: warning: nested extern declaration of ‘__glXBindSwapBarrierSGIX’
+glxcmdsswap.c:109: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:109: warning: unused variable ‘swapPC’
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:118: warning: no previous prototype for ‘__glXSwapJoinSwapGroupSGIX’
+glxcmdsswap.c: In function ‘__glXSwapJoinSwapGroupSGIX’:
+glxcmdsswap.c:127: warning: implicit declaration of function ‘__glXJoinSwapGroupSGIX’
+glxcmdsswap.c:127: warning: nested extern declaration of ‘__glXJoinSwapGroupSGIX’
+glxcmdsswap.c:121: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:121: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapDestroyContext’:
+glxcmdsswap.c:133: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:133: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapMakeCurrent’:
+glxcmdsswap.c:144: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:144: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapMakeContextCurrent’:
+glxcmdsswap.c:157: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:157: warning: unused variable ‘swapPC’
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:168: warning: no previous prototype for ‘__glXSwapMakeCurrentReadSGI’
+glxcmdsswap.c: In function ‘__glXSwapMakeCurrentReadSGI’:
+glxcmdsswap.c:179: warning: implicit declaration of function ‘__glXMakeCurrentReadSGI’
+glxcmdsswap.c:179: warning: nested extern declaration of ‘__glXMakeCurrentReadSGI’
+glxcmdsswap.c:171: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:171: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapIsDirect’:
+glxcmdsswap.c:185: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:185: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapQueryVersion’:
+glxcmdsswap.c:196: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:196: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapWaitGL’:
+glxcmdsswap.c:208: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:208: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapWaitX’:
+glxcmdsswap.c:219: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:219: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapCopyContext’:
+glxcmdsswap.c:230: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:230: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapCreateGLXPixmap’:
+glxcmdsswap.c:330: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:330: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapCreatePixmap’:
+glxcmdsswap.c:344: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:344: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapDestroyGLXPixmap’:
+glxcmdsswap.c:359: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:359: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapSwapBuffers’:
+glxcmdsswap.c:370: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:370: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapUseXFont’:
+glxcmdsswap.c:382: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:382: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapQueryExtensionsString’:
+glxcmdsswap.c:398: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:398: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapQueryServerString’:
+glxcmdsswap.c:409: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:409: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapClientInfo’:
+glxcmdsswap.c:421: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:421: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapQueryContextInfoEXT’:
+glxcmdsswap.c:434: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:434: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapMakeCurrentReply’:
+glxcmdsswap.c:450: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:450: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapIsDirectReply’:
+glxcmdsswap.c:463: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:463: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapQueryVersionReply’:
+glxcmdsswap.c:471: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:471: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘glxSwapQueryServerStringReply’:
+glxcmdsswap.c:496: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:496: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapQueryMaxSwapBarriersSGIXReply’:
+glxcmdsswap.c:546: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:546: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapVendorPrivate’:
+glxcmdsswap.c:803: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:803: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapVendorPrivateWithReply’:
+glxcmdsswap.c:917: warning: implicit declaration of function ‘__glXSwapGetFBConfigsSGIX’
+glxcmdsswap.c:917: warning: nested extern declaration of ‘__glXSwapGetFBConfigsSGIX’
+glxcmdsswap.c:865: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:865: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapGetFBConfigs’:
+glxcmdsswap.c:941: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:941: warning: unused variable ‘swapPC’
+glxcmdsswap.c: At top level:
+glxcmdsswap.c:949: warning: no previous prototype for ‘__glXSwapGetFBConfigsSGIX’
+glxcmdsswap.c: In function ‘__glXSwapCreateWindow’:
+glxcmdsswap.c:965: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:965: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapDestroyWindow’:
+glxcmdsswap.c:980: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:980: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapQueryContext’:
+glxcmdsswap.c:992: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:992: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapDestroyPbuffer’:
+glxcmdsswap.c:1020: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:1020: warning: unused variable ‘swapPC’
+glxcmdsswap.c: In function ‘__glXSwapGetDrawableAttributes’:
+glxcmdsswap.c:1031: warning: unused variable ‘swapEnd’
+glxcmdsswap.c:1031: warning: unused variable ‘swapPC’
+  CC    glxext.o
+glxext.c:53: warning: no previous prototype for ‘GlxPushProvider’
+glxext.c: In function ‘__glXFreeGLXWindow’:
+glxext.c:190: warning: ‘LookupIDByType’ is deprecated (declared at ../../../include/resource.h:275)
+glxext.c: At top level:
+glxext.c:361: warning: no previous prototype for ‘GlxSetVisualConfigs’
+glxext.c:391: warning: no previous prototype for ‘GlxWrapInitVisuals’
+  CC    glxfbconfig.o
+  CC    glxscreens.o
+glxscreens.c: In function ‘__glXScreenInit’:
+glxscreens.c:257: warning: unused variable ‘glxScreen’
+glxscreens.c: At top level:
+glxscreens.c:336: warning: no previous prototype for ‘glxLookupFBConfig’
+glxscreens.c:348: warning: no previous prototype for ‘glxLookupFBConfigByVID’
+glxscreens.c:360: warning: no previous prototype for ‘glxLookupBackEndFBConfig’
+glxscreens.c:374: warning: no previous prototype for ‘glxIsExtensionSupported’
+  CC    glxsingle.o
+glxsingle.c: In function ‘SendSwappedReply’:
+glxsingle.c:99: warning: unused variable ‘swapEnd’
+glxsingle.c:99: warning: unused variable ‘swapPC’
+glxsingle.c: At top level:
+glxsingle.c:161: warning: no previous prototype for ‘__glXForwardSingleReq’
+glxsingle.c:214: warning: no previous prototype for ‘__glXForwardPipe0WithReply’
+glxsingle.c:296: warning: no previous prototype for ‘__glXForwardAllWithReply’
+glxsingle.c:396: warning: no previous prototype for ‘__glXForwardSingleReqSwap’
+glxsingle.c:419: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwap’
+glxsingle.c:442: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwapsv’
+glxsingle.c:466: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwapiv’
+glxsingle.c:490: warning: no previous prototype for ‘__glXForwardPipe0WithReplySwapdv’
+glxsingle.c:514: warning: no previous prototype for ‘__glXForwardAllWithReplySwap’
+glxsingle.c:538: warning: no previous prototype for ‘__glXForwardAllWithReplySwapsv’
+glxsingle.c:562: warning: no previous prototype for ‘__glXForwardAllWithReplySwapiv’
+glxsingle.c:586: warning: no previous prototype for ‘__glXForwardAllWithReplySwapdv’
+glxsingle.c: In function ‘__glXDisp_ReadPixels’:
+glxsingle.c:763: warning: unused variable ‘swapEnd’
+glxsingle.c:763: warning: unused variable ‘swapPC’
+glxsingle.c:753: warning: unused variable ‘error’
+glxsingle.c: In function ‘__glXDispSwap_GetTexImage’:
+glxsingle.c:981: warning: unused variable ‘swapEnd’
+glxsingle.c:981: warning: unused variable ‘swapPC’
+glxsingle.c: In function ‘__glXDispSwap_GetColorTable’:
+glxsingle.c:998: warning: unused variable ‘swapEnd’
+glxsingle.c:998: warning: unused variable ‘swapPC’
+glxsingle.c: In function ‘__glXDisp_ReadPixels’:
+glxsingle.c:757: warning: ‘buf’ may be used uninitialized in this function
+glxsingle.c: In function ‘__glXForwardAllWithReply’:
+glxsingle.c:305: warning: ‘be_buf’ may be used uninitialized in this function
+glxsingle.c:306: warning: ‘be_buf_size’ may be used uninitialized in this function
+glxsingle.c: In function ‘__glXForwardPipe0WithReply’:
+glxsingle.c:223: warning: ‘be_buf’ may be used uninitialized in this function
+  CC    glxswap.o
+  CC    glxutil.o
+glxutil.c: In function ‘__glXCalloc’:
+glxutil.c:66: warning: unused variable ‘size’
+  CC    glxvendor.o
+glxvendor.c: In function ‘SendSwappedReply’:
+glxvendor.c:96: warning: unused variable ‘swapEnd’
+glxvendor.c:96: warning: unused variable ‘swapPC’
+glxvendor.c: At top level:
+glxvendor.c:152: warning: no previous prototype for ‘__glXVForwardSingleReq’
+glxvendor.c:201: warning: no previous prototype for ‘__glXVForwardPipe0WithReply’
+glxvendor.c:280: warning: no previous prototype for ‘__glXVForwardAllWithReply’
+glxvendor.c:377: warning: no previous prototype for ‘__glXVForwardSingleReqSwap’
+glxvendor.c: In function ‘__glXVForwardSingleReqSwap’:
+glxvendor.c:380: warning: unused variable ‘swapEnd’
+glxvendor.c:380: warning: unused variable ‘swapPC’
+glxvendor.c: At top level:
+glxvendor.c:391: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwap’
+glxvendor.c:415: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwapsv’
+glxvendor.c:439: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwapiv’
+glxvendor.c:463: warning: no previous prototype for ‘__glXVForwardPipe0WithReplySwapdv’
+glxvendor.c:487: warning: no previous prototype for ‘__glXVForwardAllWithReplySwap’
+glxvendor.c:511: warning: no previous prototype for ‘__glXVForwardAllWithReplySwapsv’
+glxvendor.c:535: warning: no previous prototype for ‘__glXVForwardAllWithReplySwapiv’
+glxvendor.c:559: warning: no previous prototype for ‘__glXVForwardAllWithReplySwapdv’
+glxvendor.c: In function ‘__glXVForwardAllWithReply’:
+glxvendor.c:289: warning: ‘be_buf’ may be used uninitialized in this function
+glxvendor.c:290: warning: ‘be_buf_size’ may be used uninitialized in this function
+glxvendor.c: In function ‘__glXVForwardPipe0WithReply’:
+glxvendor.c:210: warning: ‘be_buf’ may be used uninitialized in this function
+  CC    glxvisuals.o
+glxvisuals.c:46: warning: no previous prototype for ‘glxVisualsMatch’
+glxvisuals.c:88: warning: no previous prototype for ‘glxMatchGLXVisualInConfigList’
+glxvisuals.c:104: warning: no previous prototype for ‘glxMatchVisualInConfigList’
+glxvisuals.c:133: warning: no previous prototype for ‘glxMatchVisual’
+glxvisuals.c:162: warning: no previous prototype for ‘glxSetVisualConfigs’
+glxvisuals.c:230: warning: no previous prototype for ‘glxInitVisuals’
+  CC    g_renderswap.o
+g_renderswap.c: In function ‘__glXDispSwap_CallList’:
+g_renderswap.c:38: warning: unused variable ‘swapEnd’
+g_renderswap.c:38: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ListBase’:
+g_renderswap.c:46: warning: unused variable ‘swapEnd’
+g_renderswap.c:46: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Begin’:
+g_renderswap.c:54: warning: unused variable ‘swapEnd’
+g_renderswap.c:54: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Color3ubv’:
+g_renderswap.c:104: warning: unused variable ‘swapEnd’
+g_renderswap.c:104: warning: unused variable ‘swapPC’
+g_renderswap.c:104: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_Color4bv’:
+g_renderswap.c:123: warning: unused variable ‘swapEnd’
+g_renderswap.c:123: warning: unused variable ‘swapPC’
+g_renderswap.c:123: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_Color4ubv’:
+g_renderswap.c:166: warning: unused variable ‘swapEnd’
+g_renderswap.c:166: warning: unused variable ‘swapPC’
+g_renderswap.c:166: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_EdgeFlagv’:
+g_renderswap.c:188: warning: unused variable ‘swapEnd’
+g_renderswap.c:188: warning: unused variable ‘swapPC’
+g_renderswap.c:188: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_End’:
+g_renderswap.c:195: warning: unused variable ‘swapEnd’
+g_renderswap.c:195: warning: unused variable ‘swapPC’
+g_renderswap.c:195: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_Normal3bv’:
+g_renderswap.c:241: warning: unused variable ‘swapEnd’
+g_renderswap.c:241: warning: unused variable ‘swapPC’
+g_renderswap.c:241: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_ColorMaterial’:
+g_renderswap.c:736: warning: unused variable ‘swapEnd’
+g_renderswap.c:736: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CullFace’:
+g_renderswap.c:745: warning: unused variable ‘swapEnd’
+g_renderswap.c:745: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Fogf’:
+g_renderswap.c:753: warning: unused variable ‘swapEnd’
+g_renderswap.c:753: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Fogfv’:
+g_renderswap.c:768: warning: implicit declaration of function ‘__glFogfv_size’
+g_renderswap.c:768: warning: nested extern declaration of ‘__glFogfv_size’
+g_renderswap.c: In function ‘__glXDispSwap_Fogi’:
+g_renderswap.c:776: warning: unused variable ‘swapEnd’
+g_renderswap.c:776: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Fogiv’:
+g_renderswap.c:791: warning: implicit declaration of function ‘__glFogiv_size’
+g_renderswap.c:791: warning: nested extern declaration of ‘__glFogiv_size’
+g_renderswap.c: In function ‘__glXDispSwap_FrontFace’:
+g_renderswap.c:799: warning: unused variable ‘swapEnd’
+g_renderswap.c:799: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Hint’:
+g_renderswap.c:807: warning: unused variable ‘swapEnd’
+g_renderswap.c:807: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Lightf’:
+g_renderswap.c:816: warning: unused variable ‘swapEnd’
+g_renderswap.c:816: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Lightfv’:
+g_renderswap.c:832: warning: implicit declaration of function ‘__glLightfv_size’
+g_renderswap.c:832: warning: nested extern declaration of ‘__glLightfv_size’
+g_renderswap.c: In function ‘__glXDispSwap_Lighti’:
+g_renderswap.c:841: warning: unused variable ‘swapEnd’
+g_renderswap.c:841: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Lightiv’:
+g_renderswap.c:857: warning: implicit declaration of function ‘__glLightiv_size’
+g_renderswap.c:857: warning: nested extern declaration of ‘__glLightiv_size’
+g_renderswap.c: In function ‘__glXDispSwap_LightModelf’:
+g_renderswap.c:866: warning: unused variable ‘swapEnd’
+g_renderswap.c:866: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_LightModelfv’:
+g_renderswap.c:881: warning: implicit declaration of function ‘__glLightModelfv_size’
+g_renderswap.c:881: warning: nested extern declaration of ‘__glLightModelfv_size’
+g_renderswap.c: In function ‘__glXDispSwap_LightModeli’:
+g_renderswap.c:889: warning: unused variable ‘swapEnd’
+g_renderswap.c:889: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_LightModeliv’:
+g_renderswap.c:904: warning: implicit declaration of function ‘__glLightModeliv_size’
+g_renderswap.c:904: warning: nested extern declaration of ‘__glLightModeliv_size’
+g_renderswap.c: In function ‘__glXDispSwap_LineStipple’:
+g_renderswap.c:912: warning: unused variable ‘swapEnd’
+g_renderswap.c:912: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_LineWidth’:
+g_renderswap.c:921: warning: unused variable ‘swapEnd’
+g_renderswap.c:921: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Materialf’:
+g_renderswap.c:929: warning: unused variable ‘swapEnd’
+g_renderswap.c:929: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Materialfv’:
+g_renderswap.c:945: warning: implicit declaration of function ‘__glMaterialfv_size’
+g_renderswap.c:945: warning: nested extern declaration of ‘__glMaterialfv_size’
+g_renderswap.c: In function ‘__glXDispSwap_Materiali’:
+g_renderswap.c:954: warning: unused variable ‘swapEnd’
+g_renderswap.c:954: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Materialiv’:
+g_renderswap.c:970: warning: implicit declaration of function ‘__glMaterialiv_size’
+g_renderswap.c:970: warning: nested extern declaration of ‘__glMaterialiv_size’
+g_renderswap.c: In function ‘__glXDispSwap_PointSize’:
+g_renderswap.c:979: warning: unused variable ‘swapEnd’
+g_renderswap.c:979: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PolygonMode’:
+g_renderswap.c:987: warning: unused variable ‘swapEnd’
+g_renderswap.c:987: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Scissor’:
+g_renderswap.c:996: warning: unused variable ‘swapEnd’
+g_renderswap.c:996: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ShadeModel’:
+g_renderswap.c:1007: warning: unused variable ‘swapEnd’
+g_renderswap.c:1007: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexParameterf’:
+g_renderswap.c:1015: warning: unused variable ‘swapEnd’
+g_renderswap.c:1015: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexParameterfv’:
+g_renderswap.c:1031: warning: implicit declaration of function ‘__glTexParameterfv_size’
+g_renderswap.c:1031: warning: nested extern declaration of ‘__glTexParameterfv_size’
+g_renderswap.c: In function ‘__glXDispSwap_TexParameteri’:
+g_renderswap.c:1040: warning: unused variable ‘swapEnd’
+g_renderswap.c:1040: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexParameteriv’:
+g_renderswap.c:1056: warning: implicit declaration of function ‘__glTexParameteriv_size’
+g_renderswap.c:1056: warning: nested extern declaration of ‘__glTexParameteriv_size’
+g_renderswap.c: In function ‘__glXDispSwap_TexEnvf’:
+g_renderswap.c:1065: warning: unused variable ‘swapEnd’
+g_renderswap.c:1065: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexEnvfv’:
+g_renderswap.c:1081: warning: implicit declaration of function ‘__glTexEnvfv_size’
+g_renderswap.c:1081: warning: nested extern declaration of ‘__glTexEnvfv_size’
+g_renderswap.c: In function ‘__glXDispSwap_TexEnvi’:
+g_renderswap.c:1090: warning: unused variable ‘swapEnd’
+g_renderswap.c:1090: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexEnviv’:
+g_renderswap.c:1106: warning: implicit declaration of function ‘__glTexEnviv_size’
+g_renderswap.c:1106: warning: nested extern declaration of ‘__glTexEnviv_size’
+g_renderswap.c: In function ‘__glXDispSwap_TexGend’:
+g_renderswap.c:1115: warning: unused variable ‘swapEnd’
+g_renderswap.c:1115: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexGendv’:
+g_renderswap.c:1139: warning: implicit declaration of function ‘__glTexGendv_size’
+g_renderswap.c:1139: warning: nested extern declaration of ‘__glTexGendv_size’
+g_renderswap.c: In function ‘__glXDispSwap_TexGenf’:
+g_renderswap.c:1156: warning: unused variable ‘swapEnd’
+g_renderswap.c:1156: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexGenfv’:
+g_renderswap.c:1172: warning: implicit declaration of function ‘__glTexGenfv_size’
+g_renderswap.c:1172: warning: nested extern declaration of ‘__glTexGenfv_size’
+g_renderswap.c: In function ‘__glXDispSwap_TexGeni’:
+g_renderswap.c:1181: warning: unused variable ‘swapEnd’
+g_renderswap.c:1181: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_TexGeniv’:
+g_renderswap.c:1197: warning: implicit declaration of function ‘__glTexGeniv_size’
+g_renderswap.c:1197: warning: nested extern declaration of ‘__glTexGeniv_size’
+g_renderswap.c: In function ‘__glXDispSwap_InitNames’:
+g_renderswap.c:1206: warning: unused variable ‘swapEnd’
+g_renderswap.c:1206: warning: unused variable ‘swapPC’
+g_renderswap.c:1206: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_LoadName’:
+g_renderswap.c:1213: warning: unused variable ‘swapEnd’
+g_renderswap.c:1213: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PassThrough’:
+g_renderswap.c:1221: warning: unused variable ‘swapEnd’
+g_renderswap.c:1221: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PopName’:
+g_renderswap.c:1229: warning: unused variable ‘swapEnd’
+g_renderswap.c:1229: warning: unused variable ‘swapPC’
+g_renderswap.c:1229: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_PushName’:
+g_renderswap.c:1236: warning: unused variable ‘swapEnd’
+g_renderswap.c:1236: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_DrawBuffer’:
+g_renderswap.c:1244: warning: unused variable ‘swapEnd’
+g_renderswap.c:1244: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Clear’:
+g_renderswap.c:1252: warning: unused variable ‘swapEnd’
+g_renderswap.c:1252: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ClearAccum’:
+g_renderswap.c:1260: warning: unused variable ‘swapEnd’
+g_renderswap.c:1260: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ClearIndex’:
+g_renderswap.c:1271: warning: unused variable ‘swapEnd’
+g_renderswap.c:1271: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ClearColor’:
+g_renderswap.c:1279: warning: unused variable ‘swapEnd’
+g_renderswap.c:1279: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ClearStencil’:
+g_renderswap.c:1290: warning: unused variable ‘swapEnd’
+g_renderswap.c:1290: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ClearDepth’:
+g_renderswap.c:1298: warning: unused variable ‘swapEnd’
+g_renderswap.c:1298: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_StencilMask’:
+g_renderswap.c:1313: warning: unused variable ‘swapEnd’
+g_renderswap.c:1313: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ColorMask’:
+g_renderswap.c:1321: warning: unused variable ‘swapEnd’
+g_renderswap.c:1321: warning: unused variable ‘swapPC’
+g_renderswap.c:1321: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_DepthMask’:
+g_renderswap.c:1328: warning: unused variable ‘swapEnd’
+g_renderswap.c:1328: warning: unused variable ‘swapPC’
+g_renderswap.c:1328: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_IndexMask’:
+g_renderswap.c:1335: warning: unused variable ‘swapEnd’
+g_renderswap.c:1335: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Accum’:
+g_renderswap.c:1343: warning: unused variable ‘swapEnd’
+g_renderswap.c:1343: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Disable’:
+g_renderswap.c:1352: warning: unused variable ‘swapEnd’
+g_renderswap.c:1352: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Enable’:
+g_renderswap.c:1360: warning: unused variable ‘swapEnd’
+g_renderswap.c:1360: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PopAttrib’:
+g_renderswap.c:1368: warning: unused variable ‘swapEnd’
+g_renderswap.c:1368: warning: unused variable ‘swapPC’
+g_renderswap.c:1368: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_PushAttrib’:
+g_renderswap.c:1375: warning: unused variable ‘swapEnd’
+g_renderswap.c:1375: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_MapGrid1d’:
+g_renderswap.c:1383: warning: unused variable ‘swapEnd’
+g_renderswap.c:1383: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_MapGrid1f’:
+g_renderswap.c:1400: warning: unused variable ‘swapEnd’
+g_renderswap.c:1400: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_MapGrid2d’:
+g_renderswap.c:1410: warning: unused variable ‘swapEnd’
+g_renderswap.c:1410: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_MapGrid2f’:
+g_renderswap.c:1430: warning: unused variable ‘swapEnd’
+g_renderswap.c:1430: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_EvalMesh1’:
+g_renderswap.c:1489: warning: unused variable ‘swapEnd’
+g_renderswap.c:1489: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_EvalPoint1’:
+g_renderswap.c:1499: warning: unused variable ‘swapEnd’
+g_renderswap.c:1499: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_EvalMesh2’:
+g_renderswap.c:1507: warning: unused variable ‘swapEnd’
+g_renderswap.c:1507: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_EvalPoint2’:
+g_renderswap.c:1519: warning: unused variable ‘swapEnd’
+g_renderswap.c:1519: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_AlphaFunc’:
+g_renderswap.c:1528: warning: unused variable ‘swapEnd’
+g_renderswap.c:1528: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_BlendFunc’:
+g_renderswap.c:1537: warning: unused variable ‘swapEnd’
+g_renderswap.c:1537: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_LogicOp’:
+g_renderswap.c:1546: warning: unused variable ‘swapEnd’
+g_renderswap.c:1546: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_StencilFunc’:
+g_renderswap.c:1554: warning: unused variable ‘swapEnd’
+g_renderswap.c:1554: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_StencilOp’:
+g_renderswap.c:1564: warning: unused variable ‘swapEnd’
+g_renderswap.c:1564: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_DepthFunc’:
+g_renderswap.c:1574: warning: unused variable ‘swapEnd’
+g_renderswap.c:1574: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PixelZoom’:
+g_renderswap.c:1582: warning: unused variable ‘swapEnd’
+g_renderswap.c:1582: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PixelTransferf’:
+g_renderswap.c:1591: warning: unused variable ‘swapEnd’
+g_renderswap.c:1591: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PixelTransferi’:
+g_renderswap.c:1600: warning: unused variable ‘swapEnd’
+g_renderswap.c:1600: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ReadBuffer’:
+g_renderswap.c:1645: warning: unused variable ‘swapEnd’
+g_renderswap.c:1645: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyPixels’:
+g_renderswap.c:1653: warning: unused variable ‘swapEnd’
+g_renderswap.c:1653: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_DepthRange’:
+g_renderswap.c:1665: warning: unused variable ‘swapEnd’
+g_renderswap.c:1665: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Frustum’:
+g_renderswap.c:1681: warning: unused variable ‘swapEnd’
+g_renderswap.c:1681: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_LoadIdentity’:
+g_renderswap.c:1701: warning: unused variable ‘swapEnd’
+g_renderswap.c:1701: warning: unused variable ‘swapPC’
+g_renderswap.c:1701: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_MatrixMode’:
+g_renderswap.c:1731: warning: unused variable ‘swapEnd’
+g_renderswap.c:1731: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Ortho’:
+g_renderswap.c:1762: warning: unused variable ‘swapEnd’
+g_renderswap.c:1762: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PopMatrix’:
+g_renderswap.c:1782: warning: unused variable ‘swapEnd’
+g_renderswap.c:1782: warning: unused variable ‘swapPC’
+g_renderswap.c:1782: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_PushMatrix’:
+g_renderswap.c:1789: warning: unused variable ‘swapEnd’
+g_renderswap.c:1789: warning: unused variable ‘swapPC’
+g_renderswap.c:1789: warning: unused variable ‘sw’
+g_renderswap.c: In function ‘__glXDispSwap_Rotated’:
+g_renderswap.c:1796: warning: unused variable ‘swapEnd’
+g_renderswap.c:1796: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Rotatef’:
+g_renderswap.c:1814: warning: unused variable ‘swapEnd’
+g_renderswap.c:1814: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Scaled’:
+g_renderswap.c:1825: warning: unused variable ‘swapEnd’
+g_renderswap.c:1825: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Scalef’:
+g_renderswap.c:1842: warning: unused variable ‘swapEnd’
+g_renderswap.c:1842: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Translated’:
+g_renderswap.c:1852: warning: unused variable ‘swapEnd’
+g_renderswap.c:1852: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Translatef’:
+g_renderswap.c:1869: warning: unused variable ‘swapEnd’
+g_renderswap.c:1869: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Viewport’:
+g_renderswap.c:1879: warning: unused variable ‘swapEnd’
+g_renderswap.c:1879: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_PolygonOffset’:
+g_renderswap.c:1890: warning: unused variable ‘swapEnd’
+g_renderswap.c:1890: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyTexImage1D’:
+g_renderswap.c:1899: warning: unused variable ‘swapEnd’
+g_renderswap.c:1899: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyTexImage2D’:
+g_renderswap.c:1913: warning: unused variable ‘swapEnd’
+g_renderswap.c:1913: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyTexSubImage1D’:
+g_renderswap.c:1928: warning: unused variable ‘swapEnd’
+g_renderswap.c:1928: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyTexSubImage2D’:
+g_renderswap.c:1941: warning: unused variable ‘swapEnd’
+g_renderswap.c:1941: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:1954: warning: no previous prototype for ‘__glXDispSwap_BindTexture’
+g_renderswap.c: In function ‘__glXDispSwap_BindTexture’:
+g_renderswap.c:1956: warning: unused variable ‘swapEnd’
+g_renderswap.c:1956: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_Indexubv’:
+g_renderswap.c:1977: warning: unused variable ‘swapEnd’
+g_renderswap.c:1977: warning: unused variable ‘swapPC’
+g_renderswap.c:1977: warning: unused variable ‘sw’
+g_renderswap.c: At top level:
+g_renderswap.c:1982: warning: no previous prototype for ‘__glXDispSwap_BlendColor’
+g_renderswap.c: In function ‘__glXDispSwap_BlendColor’:
+g_renderswap.c:1984: warning: unused variable ‘swapEnd’
+g_renderswap.c:1984: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:1993: warning: no previous prototype for ‘__glXDispSwap_BlendEquation’
+g_renderswap.c: In function ‘__glXDispSwap_BlendEquation’:
+g_renderswap.c:1995: warning: unused variable ‘swapEnd’
+g_renderswap.c:1995: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:2001: warning: no previous prototype for ‘__glXDispSwap_ColorTableParameterfv’
+g_renderswap.c: In function ‘__glXDispSwap_ColorTableParameterfv’:
+g_renderswap.c:2009: warning: implicit declaration of function ‘__glColorTableParameterfv_size’
+g_renderswap.c:2009: warning: nested extern declaration of ‘__glColorTableParameterfv_size’
+g_renderswap.c: At top level:
+g_renderswap.c:2016: warning: no previous prototype for ‘__glXDispSwap_ColorTableParameteriv’
+g_renderswap.c: In function ‘__glXDispSwap_ColorTableParameteriv’:
+g_renderswap.c:2024: warning: implicit declaration of function ‘__glColorTableParameteriv_size’
+g_renderswap.c:2024: warning: nested extern declaration of ‘__glColorTableParameteriv_size’
+g_renderswap.c: At top level:
+g_renderswap.c:2031: warning: no previous prototype for ‘__glXDispSwap_CopyColorTable’
+g_renderswap.c: In function ‘__glXDispSwap_CopyColorTable’:
+g_renderswap.c:2033: warning: unused variable ‘swapEnd’
+g_renderswap.c:2033: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyColorSubTable’:
+g_renderswap.c:2045: warning: unused variable ‘swapEnd’
+g_renderswap.c:2045: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:2055: warning: no previous prototype for ‘__glXDispSwap_ConvolutionParameterf’
+g_renderswap.c: In function ‘__glXDispSwap_ConvolutionParameterf’:
+g_renderswap.c:2057: warning: unused variable ‘swapEnd’
+g_renderswap.c:2057: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ConvolutionParameterfv’:
+g_renderswap.c:2073: warning: implicit declaration of function ‘__glConvolutionParameterfv_size’
+g_renderswap.c:2073: warning: nested extern declaration of ‘__glConvolutionParameterfv_size’
+g_renderswap.c: At top level:
+g_renderswap.c:2080: warning: no previous prototype for ‘__glXDispSwap_ConvolutionParameteri’
+g_renderswap.c: In function ‘__glXDispSwap_ConvolutionParameteri’:
+g_renderswap.c:2082: warning: unused variable ‘swapEnd’
+g_renderswap.c:2082: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ConvolutionParameteriv’:
+g_renderswap.c:2098: warning: implicit declaration of function ‘__glConvolutionParameteriv_size’
+g_renderswap.c:2098: warning: nested extern declaration of ‘__glConvolutionParameteriv_size’
+g_renderswap.c: In function ‘__glXDispSwap_CopyConvolutionFilter1D’:
+g_renderswap.c:2107: warning: unused variable ‘swapEnd’
+g_renderswap.c:2107: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyConvolutionFilter2D’:
+g_renderswap.c:2119: warning: unused variable ‘swapEnd’
+g_renderswap.c:2119: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:2130: warning: no previous prototype for ‘__glXDispSwap_Histogram’
+g_renderswap.c: In function ‘__glXDispSwap_Histogram’:
+g_renderswap.c:2132: warning: unused variable ‘swapEnd’
+g_renderswap.c:2132: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:2140: warning: no previous prototype for ‘__glXDispSwap_Minmax’
+g_renderswap.c: In function ‘__glXDispSwap_Minmax’:
+g_renderswap.c:2142: warning: unused variable ‘swapEnd’
+g_renderswap.c:2142: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:2149: warning: no previous prototype for ‘__glXDispSwap_ResetHistogram’
+g_renderswap.c: In function ‘__glXDispSwap_ResetHistogram’:
+g_renderswap.c:2151: warning: unused variable ‘swapEnd’
+g_renderswap.c:2151: warning: unused variable ‘swapPC’
+g_renderswap.c: At top level:
+g_renderswap.c:2157: warning: no previous prototype for ‘__glXDispSwap_ResetMinmax’
+g_renderswap.c: In function ‘__glXDispSwap_ResetMinmax’:
+g_renderswap.c:2159: warning: unused variable ‘swapEnd’
+g_renderswap.c:2159: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_CopyTexSubImage3D’:
+g_renderswap.c:2167: warning: unused variable ‘swapEnd’
+g_renderswap.c:2167: warning: unused variable ‘swapPC’
+g_renderswap.c: In function ‘__glXDispSwap_ActiveTextureARB’:
+g_renderswap.c:2183: warning: unused variable ‘swapEnd’
+g_renderswap.c:2183: warning: unused variable ‘swapPC’
+  CC    render2swap.o
+render2swap.c:35: warning: no previous prototype for ‘__glEvalComputeK’
+render2swap.c: In function ‘swapArray’:
+render2swap.c:263: warning: unused variable ‘swapEnd’
+render2swap.c:263: warning: unused variable ‘swapPC’
+render2swap.c: In function ‘__glXDispSwap_DrawArrays’:
+render2swap.c:318: warning: unused variable ‘swapEnd’
+render2swap.c:318: warning: unused variable ‘swapPC’
+render2swap.c: At top level:
+render2swap.c:337: warning: no previous prototype for ‘__glXDispSwap_DrawArraysEXT’
+render2swap.c:259: warning: ‘swapArray’ defined but not used
+  CC    renderpixswap.o
+renderpixswap.c: In function ‘__glXDispSwap_PolygonStipple’:
+renderpixswap.c:38: warning: unused variable ‘swapEnd’
+renderpixswap.c:38: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_Bitmap’:
+renderpixswap.c:51: warning: unused variable ‘swapEnd’
+renderpixswap.c:51: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_TexImage1D’:
+renderpixswap.c:72: warning: unused variable ‘swapEnd’
+renderpixswap.c:72: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_TexImage2D’:
+renderpixswap.c:98: warning: unused variable ‘swapEnd’
+renderpixswap.c:98: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_TexImage3D’:
+renderpixswap.c:124: warning: unused variable ‘swapEnd’
+renderpixswap.c:124: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_DrawPixels’:
+renderpixswap.c:156: warning: unused variable ‘swapEnd’
+renderpixswap.c:156: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_TexSubImage1D’:
+renderpixswap.c:178: warning: unused variable ‘swapEnd’
+renderpixswap.c:178: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_TexSubImage2D’:
+renderpixswap.c:202: warning: unused variable ‘swapEnd’
+renderpixswap.c:202: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_TexSubImage3D’:
+renderpixswap.c:230: warning: unused variable ‘swapEnd’
+renderpixswap.c:230: warning: unused variable ‘swapPC’
+renderpixswap.c: At top level:
+renderpixswap.c:260: warning: no previous prototype for ‘__glXDispSwap_ColorTable’
+renderpixswap.c: In function ‘__glXDispSwap_ColorTable’:
+renderpixswap.c:264: warning: unused variable ‘swapEnd’
+renderpixswap.c:264: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_ColorSubTable’:
+renderpixswap.c:288: warning: unused variable ‘swapEnd’
+renderpixswap.c:288: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_ConvolutionFilter1D’:
+renderpixswap.c:312: warning: unused variable ‘swapEnd’
+renderpixswap.c:312: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_ConvolutionFilter2D’:
+renderpixswap.c:336: warning: unused variable ‘swapEnd’
+renderpixswap.c:336: warning: unused variable ‘swapPC’
+renderpixswap.c: In function ‘__glXDispSwap_SeparableFilter2D’:
+renderpixswap.c:362: warning: unused variable ‘swapEnd’
+renderpixswap.c:362: warning: unused variable ‘swapPC’
+renderpixswap.c:361: warning: unused variable ‘image1len’
+  CC    dmx.o
+dmx.c: In function ‘ProcDMXForceWindowCreation’:
+dmx.c:277: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmx.c: In function ‘dmxPopulatePanoramiX’:
+dmx.c:552: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+  CC    dmxcb.o
+  CC    dmxcmap.o
+  CC    dmxcursor.o
+  CC    dmxdpms.o
+  CC    dmxextension.o
+dmxextension.c: In function ‘dmxBERestorePixmapImage’:
+dmxextension.c:704: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+dmxextension.c:714: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+dmxextension.c: In function ‘dmxBECreateResources’:
+dmxextension.c:859: warning: cast from pointer to integer of different size
+dmxextension.c: In function ‘dmxBERestoreRenderPict’:
+dmxextension.c:1066: warning: cast from pointer to integer of different size
+dmxextension.c: In function ‘dmxBERestoreRenderGlyph’:
+dmxextension.c:1088: warning: cast from pointer to integer of different size
+dmxextension.c:1163: warning: passing argument 1 of ‘free’ makes pointer from integer without a cast
+/usr/include/stdlib.h:488: note: expected ‘void *’ but argument is of type ‘int’
+dmxextension.c: In function ‘dmxAttachScreen’:
+dmxextension.c:1282: warning: cast to pointer from integer of different size
+dmxextension.c:1292: warning: cast to pointer from integer of different size
+dmxextension.c:1298: warning: cast to pointer from integer of different size
+dmxextension.c: In function ‘dmxBEFindPixmapImage’:
+dmxextension.c:1376: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+dmxextension.c:1386: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+dmxextension.c: In function ‘dmxBEDestroyResources’:
+dmxextension.c:1462: warning: cast from pointer to integer of different size
+dmxextension.c: In function ‘dmxDetachScreen’:
+dmxextension.c:1607: warning: cast to pointer from integer of different size
+  CC    dmxfont.o
+  CC    dmxgc.o
+dmxgc.c: In function ‘dmxChangeClip’:
+dmxgc.c:386: warning: case label value exceeds maximum value for type
+dmxgc.c:387: warning: case label value exceeds maximum value for type
+dmxgc.c:388: warning: case label value exceeds maximum value for type
+dmxgc.c:389: warning: case label value exceeds maximum value for type
+  CC    dmxgcops.o
+dmxgcops.c: In function ‘dmxFindAlternatePixmap’:
+dmxgcops.c:527: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+dmxgcops.c:536: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+  CC    dmxinit.o
+  CC    dmxinput.o
+  CC    dmxlog.o
+  CC    dmxpict.o
+dmxpict.c: In function ‘dmxProcRenderCreateGlyphSet’:
+dmxpict.c:275: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c: In function ‘dmxProcRenderFreeGlyphSet’:
+dmxpict.c:317: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c: In function ‘dmxProcRenderAddGlyphs’:
+dmxpict.c:360: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c: In function ‘dmxProcRenderFreeGlyphs’:
+dmxpict.c:403: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c: In function ‘dmxProcRenderCompositeGlyphs’:
+dmxpict.c:475: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c:481: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c:498: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c:549: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+dmxpict.c:558: warning: ‘SecurityLookupIDByType’ is deprecated (declared at ../../include/resource.h:261)
+  CC    dmxpixmap.o
+dmxpixmap.c: In function ‘dmxBitmapToRegion’:
+dmxpixmap.c:200: warning: ‘Box.x1’ may be used uninitialized in this function
+  CC    dmxprop.o
+  CC    dmxscrinit.o
+  CC    dmxshadow.o
+  CC    dmxstat.o
+  CC    dmxsync.o
+  CC    dmxvisual.o
+  CC    dmxwindow.o
+dmxwindow.c: In function ‘dmxCreateRootWindow’:
+dmxwindow.c:89: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+dmxwindow.c: In function ‘dmxGetDefaultWindowAttributes’:
+dmxwindow.c:196: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+dmxwindow.c: In function ‘dmxDoChangeWindowAttributes’:
+dmxwindow.c:556: warning: ‘LookupIDByType’ is deprecated (declared at ../../include/resource.h:275)
+  CC    miinitext.o
+  CC    fbcmap_mi.o
+  CC    panoramiX.o
+  CC    dmx_glxvisuals.o
+  LINK  Xdmx
+Making all in test
+Making all in .
+Making all in xi2

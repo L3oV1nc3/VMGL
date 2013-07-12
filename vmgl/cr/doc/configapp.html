@@ -1,0 +1,207 @@
+<!-- Copyright (c) 2001, Stanford University
+     All rights reserved.
+
+	 See the file LICENSE.txt for information on redistributing this software.  -->
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+<link rel="stylesheet" type="text/css" href="chromium.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1 class="PageHeading">Configuring the application node</h1>
+<p>This page provides a complete list of all the configuration parameters
+for the Chromium application node/faker.</p>
+<p>Examples of setting app node parameters:</p>
+<pre>
+	node = CRApplicationNode()
+	node.Conf( 'application', 'atlantis' )
+	node.Conf( 'minimum_window_size', [300, 300] )
+	node.Conf( 'match_window_title', 'perfly' )
+	node.Conf( 'show_cursor', 1 )
+</pre>
+<br>
+
+<table border="1" width="100%">
+  <tr class="ConfigTableHeader">
+    <td width="19%">Parameter Name</td>
+    <td width="12%">Value Types</td>
+    <td width="115%">Description</td>
+  </tr>
+
+  <tr>
+    <td width="19%" class="ConfigOption">application</td>
+    <td width="12%" class="ConfigType">String</td>
+    <td width="115%" class="ConfigDesc">
+      This options specifies the application (and command line arguments) to
+      be run by the application node.
+      This option is equivalent to calling the <code>appNode.SetApplication()</code>
+      function.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">start_dir</td>
+    <td width="12%" class="ConfigType">String</td>
+    <td width="115%" class="ConfigDesc">
+      This option specifies the directory to change to before starting the
+      application program.
+      This is equivalent to calling the <code>appNode.StartDir()</code> function.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">client_dll</td>
+    <td width="12%" class="ConfigType">String</td>
+    <td width="115%" class="ConfigDesc">
+      This option specifies the directory to search for the crfaker library.
+      Setting this option is equivalent to calling the
+      <code>appNode.ClientDLL()</code> function.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">spu_dir</td>
+    <td width="12%" class="ConfigType">String</td>
+    <td width="115%" class="ConfigDesc">
+      This options specifies the directory to search for Chromium SPU DLLs.
+      Setting this option is equivalent to calling the
+      <code>appNode.SPUDir()</code> function.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">track_window_size</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+      This option controls whether Chromium monitors the application
+      window for size changes.  When this is enabled and the application
+      window is resized the head SPU's WindowSize() function will be called
+      with the new window dimensions.
+      This is useful for <a href="tilesort.html">dynamic tile sorting</a>.
+      The default is false/0.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">track_window_position</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+      This option controls whether Chromium monitors the application
+      window for position changes.  When this is enabled and the application
+      window is moved the head SPU's WindowPosition() function will be called
+      with the new window position.
+      This is useful for <a href="dmx.html">DMX</a>.
+      The default is false/0.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">track_window_visibility</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+      This option controls whether Chromium monitors the application
+      window for visibility.  When this is enabled and the application
+      window is hidden or displayed (aka mapped/unmapped) the head SPU's
+      WindowShow() function will be called with the new visibility state.
+      This is useful for <a href="dmx.html">Performer</a> which creates a
+      log of temporary windows during start-up that otherwise just clutter
+      the screen.
+      The default is false/0.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">minimum_window_size</td>
+    <td width="12%" class="ConfigType">2 Integers</td>
+    <td width="115%" class="ConfigDesc">
+      This option is useful for running multi-context, multi-window OpenGL
+      applications.  It specifies the minimum window size (width and height)
+      that Chromium should be allowed to render into.
+      Smaller windows will be rendered into by the native OpenGL library.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">maximum_window_size</td>
+    <td width="12%" class="ConfigType">2 Integers</td>
+    <td width="115%" class="ConfigDesc">
+      This option is useful for running multi-context, multi-window OpenGL
+      applications.  It specifies the maximum window size (width and height)
+      that Chromium should be allowed to render into. NOTE: This must be
+      used alongside the minimum_window_size parameter above.
+      This allows to Chromium to clamp a certain window size.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">match_window_title</td>
+    <td width="12%" class="ConfigType">String</td>
+    <td width="115%" class="ConfigDesc">
+      This option is also useful for running multi-context, multi-window OpenGL
+      applications.
+      It specifies the name of the window which Chromium should render into.
+      The name of a window is usually displayed in the titlebar at the top
+      of a window.
+      All other OpenGL windows will be rendered by the native OpenGL library.
+      Wildcard prefixes and suffixes are allowed.
+      For example: 'Model*' will cause Chromium to render into the first
+      OpenGL window it finds that has a name beginning with 'Model'.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">match_window_count</td>
+    <td width="12%" class="ConfigType">Integer</td>
+    <td width="115%" class="ConfigDesc">
+      Specifies that the Nth OpenGL window created should be rendered
+      by Chromium (other windows will use native OpenGL).  As with the above
+      options, this is useful for multi-window OpenGL applications.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">ignore_window_list</td>
+    <td width="12%" class="ConfigType">Multiple Integers</td>
+    <td width="115%" class="ConfigDesc">
+      Specifies that the Nth OpenGL window created should be rendered 
+      by the native OpenGL library. You can specify multiple integers
+      here and they must be comma separated with no spaces. As with the
+      above options, this is useful for multi-window OpenGL applications.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">show_cursor</td>
+    <td width="12%" class="ConfigType">Boolean</td>
+    <td width="115%" class="ConfigDesc">
+      This option causes a <em>virtual cursor</em> to be displayed on the
+      render servers which tracks the location of the user's mouse.
+      This feature is a bit of a hack and doesn't always work well.
+      The main restriction is that the virtual cursor is only redrawn during
+      SwapBuffers.  Programs which continuously redraw their display, like
+      the atlantis demo work reasonably well.
+      Other programs which only occasionally redraw their display don't
+      work as well.  Specify '0' or '1' as the value.  The default is 0.
+      <br>
+      Note: This option must also be set on the render SPU to make this work.
+      <br>
+      In the long run, a better solution will hopefully be implemented.
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">system_gl_path</td>
+    <td width="12%" class="ConfigType">string</td>
+    <td width="115%" class="ConfigDesc">
+      Specifies the directory to find the system OpenGL library.
+      This can be useful when an application uses a combination of Chromium
+      and native OpenGL contexts.  Default is "" (empty string).
+    </td>
+  </tr>
+  <tr>
+    <td width="19%" class="ConfigOption">ignore_freeglut_menus</td>
+    <td width="12%" class="ConfigType">Integer</td>
+    <td width="115%" class="ConfigDesc">
+      If set, render freeglut's pop-up menus with native OpenGL instead of
+      with Chromium.  Default is 1 (set).
+    </td>
+  </tr>
+</table>
+</body>
+
+</html>
+
+

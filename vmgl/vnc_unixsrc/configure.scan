@@ -1,0 +1,162 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ([2.63])
+AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
+AC_CONFIG_SRCDIR([vncpasswd/vncpasswd.c])
+AC_CONFIG_HEADERS([config.h])
+
+# Checks for programs.
+AC_PROG_YACC
+AC_PROG_CXX
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_LEX
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+
+# Checks for libraries.
+# FIXME: Replace `main' with a function in `-lAppleWM':
+AC_CHECK_LIB([AppleWM], [main])
+# FIXME: Replace `main' with a function in `-lFS':
+AC_CHECK_LIB([FS], [main])
+# FIXME: Replace `main' with a function in `-lGL':
+AC_CHECK_LIB([GL], [main])
+# FIXME: Replace `main' with a function in `-lGLU':
+AC_CHECK_LIB([GLU], [main])
+# FIXME: Replace `main' with a function in `-lGLw':
+AC_CHECK_LIB([GLw], [main])
+# FIXME: Replace `main' with a function in `-lICE':
+AC_CHECK_LIB([ICE], [main])
+# FIXME: Replace `main' with a function in `-lSM':
+AC_CHECK_LIB([SM], [main])
+# FIXME: Replace `main' with a function in `-lWindowsWM':
+AC_CHECK_LIB([WindowsWM], [main])
+# FIXME: Replace `main' with a function in `-lX11':
+AC_CHECK_LIB([X11], [main])
+# FIXME: Replace `main' with a function in `-lXRes':
+AC_CHECK_LIB([XRes], [main])
+# FIXME: Replace `main' with a function in `-lXTrap':
+AC_CHECK_LIB([XTrap], [main])
+# FIXME: Replace `main' with a function in `-lXa':
+AC_CHECK_LIB([Xa], [main])
+# FIXME: Replace `main' with a function in `-lXau':
+AC_CHECK_LIB([Xau], [main])
+# FIXME: Replace `main' with a function in `-lXaw':
+AC_CHECK_LIB([Xaw], [main])
+# FIXME: Replace `main' with a function in `-lXbsd':
+AC_CHECK_LIB([Xbsd], [main])
+# FIXME: Replace `main' with a function in `-lXcomposite':
+AC_CHECK_LIB([Xcomposite], [main])
+# FIXME: Replace `main' with a function in `-lXcursor':
+AC_CHECK_LIB([Xcursor], [main])
+# FIXME: Replace `main' with a function in `-lXdamage':
+AC_CHECK_LIB([Xdamage], [main])
+# FIXME: Replace `main' with a function in `-lXdmcp':
+AC_CHECK_LIB([Xdmcp], [main])
+# FIXME: Replace `main' with a function in `-lXevie':
+AC_CHECK_LIB([Xevie], [main])
+# FIXME: Replace `main' with a function in `-lXext':
+AC_CHECK_LIB([Xext], [main])
+# FIXME: Replace `main' with a function in `-lXfixes':
+AC_CHECK_LIB([Xfixes], [main])
+# FIXME: Replace `main' with a function in `-lXfont':
+AC_CHECK_LIB([Xfont], [main])
+# FIXME: Replace `main' with a function in `-lXfontcache':
+AC_CHECK_LIB([Xfontcache], [main])
+# FIXME: Replace `main' with a function in `-lXft':
+AC_CHECK_LIB([Xft], [main])
+# FIXME: Replace `main' with a function in `-lXi':
+AC_CHECK_LIB([Xi], [main])
+# FIXME: Replace `main' with a function in `-lXinerama':
+AC_CHECK_LIB([Xinerama], [main])
+# FIXME: Replace `main' with a function in `-lXkey':
+AC_CHECK_LIB([Xkey], [main])
+# FIXME: Replace `main' with a function in `-lXmu':
+AC_CHECK_LIB([Xmu], [main])
+# FIXME: Replace `main' with a function in `-lXmuu':
+AC_CHECK_LIB([Xmuu], [main])
+# FIXME: Replace `main' with a function in `-lXp':
+AC_CHECK_LIB([Xp], [main])
+# FIXME: Replace `main' with a function in `-lXpm':
+AC_CHECK_LIB([Xpm], [main])
+# FIXME: Replace `main' with a function in `-lXrandr':
+AC_CHECK_LIB([Xrandr], [main])
+# FIXME: Replace `main' with a function in `-lXrender':
+AC_CHECK_LIB([Xrender], [main])
+# FIXME: Replace `main' with a function in `-lXss':
+AC_CHECK_LIB([Xss], [main])
+# FIXME: Replace `main' with a function in `-lXt':
+AC_CHECK_LIB([Xt], [main])
+# FIXME: Replace `main' with a function in `-lXtst':
+AC_CHECK_LIB([Xtst], [main])
+# FIXME: Replace `main' with a function in `-lXv':
+AC_CHECK_LIB([Xv], [main])
+# FIXME: Replace `main' with a function in `-lXvMC':
+AC_CHECK_LIB([XvMC], [main])
+# FIXME: Replace `main' with a function in `-lXxf86dga':
+AC_CHECK_LIB([Xxf86dga], [main])
+# FIXME: Replace `main' with a function in `-lXxf86misc':
+AC_CHECK_LIB([Xxf86misc], [main])
+# FIXME: Replace `main' with a function in `-lXxf86rush':
+AC_CHECK_LIB([Xxf86rush], [main])
+# FIXME: Replace `main' with a function in `-lXxf86vm':
+AC_CHECK_LIB([Xxf86vm], [main])
+# FIXME: Replace `main' with a function in `-ldmx':
+AC_CHECK_LIB([dmx], [main])
+# FIXME: Replace `main' with a function in `-ldps':
+AC_CHECK_LIB([dps], [main])
+# FIXME: Replace `main' with a function in `-ldpstk':
+AC_CHECK_LIB([dpstk], [main])
+# FIXME: Replace `main' with a function in `-lexpat':
+AC_CHECK_LIB([expat], [main])
+# FIXME: Replace `main' with a function in `-lfl':
+AC_CHECK_LIB([fl], [main])
+# FIXME: Replace `main' with a function in `-lfntstubs':
+AC_CHECK_LIB([fntstubs], [main])
+# FIXME: Replace `main' with a function in `-lfontconfig':
+AC_CHECK_LIB([fontconfig], [main])
+# FIXME: Replace `main' with a function in `-lfontenc':
+AC_CHECK_LIB([fontenc], [main])
+# FIXME: Replace `main' with a function in `-lfreetype':
+AC_CHECK_LIB([freetype], [main])
+# FIXME: Replace `main' with a function in `-lgcc':
+AC_CHECK_LIB([gcc], [main])
+# FIXME: Replace `main' with a function in `-ljpeg':
+AC_CHECK_LIB([jpeg], [main])
+# FIXME: Replace `main' with a function in `-loldX':
+AC_CHECK_LIB([oldX], [main])
+# FIXME: Replace `main' with a function in `-lpng':
+AC_CHECK_LIB([png], [main])
+# FIXME: Replace `main' with a function in `-lpsres':
+AC_CHECK_LIB([psres], [main])
+# FIXME: Replace `main' with a function in `-lxkbfile':
+AC_CHECK_LIB([xkbfile], [main])
+# FIXME: Replace `main' with a function in `-lxkbui':
+AC_CHECK_LIB([xkbui], [main])
+# FIXME: Replace `main' with a function in `-lz':
+AC_CHECK_LIB([z], [main])
+
+# Checks for header files.
+AC_PATH_X
+AC_CHECK_HEADERS([arpa/inet.h fcntl.h limits.h netdb.h netinet/in.h stdlib.h string.h sys/socket.h sys/time.h unistd.h])
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_TYPE_SIZE_T
+
+# Checks for library functions.
+AC_FUNC_FORK
+AC_FUNC_LSTAT_FOLLOWS_SLASHED_SYMLINK
+AC_FUNC_MALLOC
+AC_FUNC_WAIT3
+AC_CHECK_FUNCS([gethostbyname getpass memmove memset mkdir select socket strcasecmp strchr strdup strerror strncasecmp strspn uname])
+
+AC_CONFIG_FILES([Makefile
+                 libvncauth/Makefile
+                 vncconnect/Makefile
+                 vncpasswd/Makefile
+                 vncviewer/Makefile])
+AC_CONFIG_SUBDIRS([Xvnc])
+AC_OUTPUT

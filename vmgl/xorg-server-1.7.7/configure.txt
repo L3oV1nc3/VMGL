@@ -1,0 +1,370 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking dependency style of gcc... gcc3
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1966080
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking for bash... /bin/bash
+checking if dolt supports this host... yes, replacing libtool
+checking whether make sets $(MAKE)... (cached) yes
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking for bison... bison -y
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for cpp... /usr/bin/cpp
+checking if /usr/bin/cpp requires -undef... yes
+checking if /usr/bin/cpp requires -traditional... yes
+checking for sed... (cached) /bin/sed
+checking for dtrace... not_found
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... (cached) yes
+checking stropts.h usability... no
+checking stropts.h presence... no
+checking for stropts.h... no
+checking for an ANSI C-conforming const... yes
+checking whether byte ordering is bigendian... no
+checking size of unsigned long... 8
+checking for pid_t... yes
+checking byteswap.h usability... yes
+checking byteswap.h presence... yes
+checking for byteswap.h... yes
+checking sys/endian.h usability... no
+checking sys/endian.h presence... no
+checking for sys/endian.h... no
+checking for dlopen... no
+checking for dlopen in -ldl... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for geteuid... yes
+checking for getuid... yes
+checking for link... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkstemp... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for strtol... yes
+checking for getopt... yes
+checking for getopt_long... yes
+checking for vsnprintf... yes
+checking for walkcontext... no
+checking for backtrace... yes
+checking for getisax... no
+checking for getzoneid... no
+checking for shmctl64... no
+checking for strcasestr... yes
+checking for ffs... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for getdtablesize... yes
+checking for getifaddrs... yes
+checking for getpeereid... no
+checking for getpeerucred... no
+checking for strlcat... no
+checking for strlcpy... no
+checking for mmap... yes
+checking for sqrt in -lm... yes
+checking for cbrt in -lm... yes
+checking ndbm.h usability... no
+checking ndbm.h presence... no
+checking for ndbm.h... no
+checking dbm.h usability... no
+checking dbm.h presence... no
+checking for dbm.h... no
+checking rpcsvc/dbm.h usability... no
+checking rpcsvc/dbm.h presence... no
+checking for rpcsvc/dbm.h... no
+checking linux/agpgart.h usability... yes
+checking linux/agpgart.h presence... yes
+checking for linux/agpgart.h... yes
+checking sys/agpio.h usability... no
+checking sys/agpio.h presence... no
+checking for sys/agpio.h... no
+checking sys/agpgart.h usability... no
+checking sys/agpgart.h presence... no
+checking for sys/agpgart.h... no
+checking linux/apm_bios.h usability... yes
+checking linux/apm_bios.h presence... yes
+checking for linux/apm_bios.h... yes
+checking linux/fb.h usability... yes
+checking linux/fb.h presence... yes
+checking for linux/fb.h... yes
+checking asm/mtrr.h usability... yes
+checking asm/mtrr.h presence... yes
+checking for asm/mtrr.h... yes
+checking sys/memrange.h usability... no
+checking sys/memrange.h presence... no
+checking for sys/memrange.h... no
+checking machine/mtrr.h usability... no
+checking machine/mtrr.h presence... no
+checking for machine/mtrr.h... no
+checking for sys/linker.h... no
+checking for SYSV IPC... yes
+checking machine/apmvar.h usability... no
+checking machine/apmvar.h presence... no
+checking for machine/apmvar.h... no
+checking execinfo.h usability... yes
+checking execinfo.h presence... yes
+checking for execinfo.h... yes
+checking for backtrace in -lc... yes
+checking to see if we can install the Xorg server as root... yes
+checking if Xtrans should support UNIX socket connections... yes
+checking if Xtrans should support TCP socket connections... yes
+checking for library containing socket... none required
+checking for library containing gethostbyname... none required
+checking for getaddrinfo... yes
+checking if IPv6 support should be built... yes
+checking for struct sockaddr_in.sin_len... no
+checking for socklen_t... yes
+checking if Xtrans should support os-specific local connections... no
+checking for authdes_seccreate... no
+checking for authdes_create... yes
+checking for library containing getsecretkey... none required
+checking if Secure RPC authentication ("SUN-DES-1") should be supported... yes
+checking for NONE/share/sgml/X11/defs.ent... no
+checking for linuxdoc... no
+checking for ps2pdf... /usr/bin/ps2pdf
+checking Whether to build documentation... no
+checking Whether to build pdf documentation... yes
+checking for DBUS... yes
+checking for HAL... yes
+checking for glibc...... yes
+checking for clock_gettime... no
+checking for clock_gettime in -lrt... yes
+checking for a useful monotonic clock ...... yes
+checking for XLIB... yes
+checking for GL... yes
+checking for DRIPROTO... yes
+checking for DRI... yes
+checking for DRI2PROTO... yes
+checking for LIBDRM... yes
+checking for strcasecmp... yes
+checking for strncasecmp... yes
+checking for strcasestr... (cached) yes
+checking for XDMCP... yes
+checking for XdmcpWrap in -lXdmcp... yes
+checking for GLIB... yes
+checking whether the linker supports -wrap... yes
+checking for SHA1Init in -lmd... no
+checking for XSERVERCFLAGS... yes
+checking for XSERVERLIBS... yes
+checking if SVR4 needs to be defined... no
+checking whether to build Xvfb DDX... yes
+checking for XNESTMODULES... yes
+checking whether to build Xnest DDX... yes
+checking whether to build Xorg DDX... yes
+checking for symbol visibility support... yes
+checking for PCIACCESS... yes
+checking for pci_system_init_dev_mem... yes
+checking for pci_device_enable... yes
+checking for pci_device_is_boot_vga... yes
+checking for pci_device_vgaarb_init... yes
+checking for DGA... yes
+checking for DGA... yes
+checking for XF86VIDMODE... yes
+checking for XF86VIDMODE... yes
+checking for XORG_MODULES... yes
+checking for perl... /usr/bin/perl
+checking whether to build XWin DDX... no
+checking dependency style of $(CC)... none
+checking for DMXMODULES... yes
+checking for XDMXCONFIG_DEP... yes
+checking whether to build Xdmx DDX... yes
+checking linux/input.h usability... yes
+checking linux/input.h presence... yes
+checking for linux/input.h... yes
+checking linux/keyboard.h usability... yes
+checking linux/keyboard.h presence... yes
+checking for linux/keyboard.h... yes
+checking for DMXEXAMPLES_DEP... yes
+checking for DMXXMUEXAMPLES_DEP... yes
+checking for DMXXIEXAMPLES_DEP... yes
+checking for XTSTEXAMPLES_DEP... yes
+checking for XRESEXAMPLES_DEP... yes
+checking for X11EXAMPLES_DEP... yes
+checking for sed... /bin/sed
+configure: creating ./config.status
+config.status: creating shave
+config.status: creating shave-libtool
+config.status: creating Makefile
+config.status: creating glx/Makefile
+config.status: creating include/Makefile
+config.status: creating composite/Makefile
+config.status: creating damageext/Makefile
+config.status: creating dbe/Makefile
+config.status: creating dix/Makefile
+config.status: creating doc/Makefile
+config.status: creating fb/Makefile
+config.status: creating record/Makefile
+config.status: creating config/Makefile
+config.status: creating mi/Makefile
+config.status: creating miext/Makefile
+config.status: creating miext/damage/Makefile
+config.status: creating miext/shadow/Makefile
+config.status: creating miext/cw/Makefile
+config.status: creating miext/rootless/Makefile
+config.status: creating os/Makefile
+config.status: creating randr/Makefile
+config.status: creating render/Makefile
+config.status: creating xkb/Makefile
+config.status: creating Xext/Makefile
+config.status: creating Xi/Makefile
+config.status: creating xfixes/Makefile
+config.status: creating exa/Makefile
+config.status: creating hw/Makefile
+config.status: creating hw/xfree86/Makefile
+config.status: creating hw/xfree86/common/Makefile
+config.status: creating hw/xfree86/common/xf86Build.h
+config.status: creating hw/xfree86/ddc/Makefile
+config.status: creating hw/xfree86/dixmods/Makefile
+config.status: creating hw/xfree86/dixmods/extmod/Makefile
+config.status: creating hw/xfree86/doc/Makefile
+config.status: creating hw/xfree86/doc/devel/Makefile
+config.status: creating hw/xfree86/doc/man/Makefile
+config.status: creating hw/xfree86/doc/sgml/Makefile
+config.status: creating hw/xfree86/dri/Makefile
+config.status: creating hw/xfree86/dri2/Makefile
+config.status: creating hw/xfree86/exa/Makefile
+config.status: creating hw/xfree86/fbdevhw/Makefile
+config.status: creating hw/xfree86/i2c/Makefile
+config.status: creating hw/xfree86/int10/Makefile
+config.status: creating hw/xfree86/loader/Makefile
+config.status: creating hw/xfree86/modes/Makefile
+config.status: creating hw/xfree86/os-support/Makefile
+config.status: creating hw/xfree86/os-support/bsd/Makefile
+config.status: creating hw/xfree86/os-support/bus/Makefile
+config.status: creating hw/xfree86/os-support/hurd/Makefile
+config.status: creating hw/xfree86/os-support/misc/Makefile
+config.status: creating hw/xfree86/os-support/linux/Makefile
+config.status: creating hw/xfree86/os-support/sco/Makefile
+config.status: creating hw/xfree86/os-support/solaris/Makefile
+config.status: creating hw/xfree86/os-support/sysv/Makefile
+config.status: creating hw/xfree86/parser/Makefile
+config.status: creating hw/xfree86/ramdac/Makefile
+config.status: creating hw/xfree86/shadowfb/Makefile
+config.status: creating hw/xfree86/vbe/Makefile
+config.status: creating hw/xfree86/vgahw/Makefile
+config.status: creating hw/xfree86/x86emu/Makefile
+config.status: creating hw/xfree86/xaa/Makefile
+config.status: creating hw/xfree86/xf8_16bpp/Makefile
+config.status: creating hw/xfree86/utils/Makefile
+config.status: creating hw/xfree86/utils/cvt/Makefile
+config.status: creating hw/xfree86/utils/gtf/Makefile
+config.status: creating hw/dmx/config/Makefile
+config.status: creating hw/dmx/doc/Makefile
+config.status: creating hw/dmx/examples/Makefile
+config.status: creating hw/dmx/input/Makefile
+config.status: creating hw/dmx/glxProxy/Makefile
+config.status: creating hw/dmx/Makefile
+config.status: creating hw/vfb/Makefile
+config.status: creating hw/xnest/Makefile
+config.status: creating hw/xwin/Makefile
+config.status: creating hw/xquartz/Makefile
+config.status: creating hw/xquartz/GL/Makefile
+config.status: creating hw/xquartz/bundle/Makefile
+config.status: creating hw/xquartz/doc/Makefile
+config.status: creating hw/xquartz/mach-startup/Makefile
+config.status: creating hw/xquartz/pbproxy/Makefile
+config.status: creating hw/xquartz/xpr/Makefile
+config.status: creating hw/kdrive/Makefile
+config.status: creating hw/kdrive/ephyr/Makefile
+config.status: creating hw/kdrive/fake/Makefile
+config.status: creating hw/kdrive/fbdev/Makefile
+config.status: creating hw/kdrive/linux/Makefile
+config.status: creating hw/kdrive/sdl/Makefile
+config.status: creating hw/kdrive/src/Makefile
+config.status: creating test/Makefile
+config.status: creating test/xi2/Makefile
+config.status: creating xorg-server.pc
+config.status: creating include/do-not-use-config.h
+config.status: include/do-not-use-config.h is unchanged
+config.status: creating include/xorg-server.h
+config.status: include/xorg-server.h is unchanged
+config.status: creating include/dix-config.h
+config.status: include/dix-config.h is unchanged
+config.status: creating include/xorg-config.h
+config.status: include/xorg-config.h is unchanged
+config.status: creating include/xkb-config.h
+config.status: include/xkb-config.h is unchanged
+config.status: creating include/xwin-config.h
+config.status: include/xwin-config.h is unchanged
+config.status: creating include/kdrive-config.h
+config.status: include/kdrive-config.h is unchanged
+config.status: creating include/version-config.h
+config.status: include/version-config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands

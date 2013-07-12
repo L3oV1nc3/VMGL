@@ -1,0 +1,104 @@
+diff -urN a/firegl_public.c b/firegl_public.c
+--- a/firegl_public.c	2006-09-05 14:58:52.000000000 -0400
++++ b/firegl_public.c	2006-09-06 17:21:27.000000000 -0400
+@@ -1,4 +1,9 @@
+ /****************************************************************************
++ * Copyright (c) 2006-2007 H. Andres Lagar-Cavilla                                                                          *
++ * Modifications to the ati fglrx kernel module open source wrapper made
++ * in the context of the vmgl project                                                                         *
++ ****************************************************************************/
++/****************************************************************************
+  *                                                                          *
+  * Copyright 1999-2005 ATI Technologies Inc., Markham, Ontario, CANADA.     *
+  * All Rights Reserved.                                                     *
+@@ -43,6 +48,7 @@
+ #if !defined(CONFIG_X86_BIGSMP)
+ #if !defined(CONFIG_X86_VISWS)
+ #if !defined(CONFIG_X86_GENERICARCH)
++#if !defined(CONFIG_X86_XEN)
+ #error unknown or undefined architecture configured
+ #endif
+ #endif
+@@ -52,6 +58,7 @@
+ #endif
+ #endif
+ #endif
++#endif
+ #endif /* LINUX_VERSION_CODE */
+ 
+ /* The dirty-page-tracking patch included in NLD 9 SMP kernels defines
+diff -urN a/firegl_public.h b/firegl_public.h
+--- a/firegl_public.h	2006-09-05 14:58:52.000000000 -0400
++++ b/firegl_public.h	2006-09-06 17:21:44.000000000 -0400
+@@ -1,4 +1,9 @@
+ /****************************************************************************
++ * Copyright (c) 2006-2007 H. Andres Lagar-Cavilla                                                                          *
++ * Modifications to the ati fglrx kernel module open source wrapper made
++ * in the context of the vmgl project                                                                         *
++****************************************************************************/
++/****************************************************************************
+  *                                                                          *
+  * Copyright 1999-2005 ATI Technologies Inc., Markham, Ontario, CANADA.     *
+  * All Rights Reserved.                                                     *
+@@ -32,8 +37,15 @@
+ 
+ #if LINUX_VERSION_CODE > KERNEL_VERSION(2,6,9)
+ 
++#ifdef CONFIG_XEN
++#define REMAP_PAGE_RANGE_FN io_remap_pfn_range
++#define REMAP_PAGE_RANGE_STR "io_remap_pfn_range"
++
++#else
+ #define REMAP_PAGE_RANGE_FN remap_pfn_range
+ #define REMAP_PAGE_RANGE_STR "remap_pfn_range"
++#endif
++
+ #define REMAP_PAGE_RANGE_OFF(offset) ((offset) >> PAGE_SHIFT)
+ 
+ #else /* LINUX_VERSION_CODE <= KERNEL_VERSION(2,6,9) */
+@@ -44,13 +56,21 @@
+ 
+ #endif /* LINUX_VERSION_CODE > KERNEL_VERSION(2,6,9) */
+ 
++#ifdef CONFIG_XEN
++#define REMAP_PAGE_RANGE(vma,offset) \
++    REMAP_PAGE_RANGE_FN((vma), \
++                        (vma)->vm_start,	\
++                        REMAP_PAGE_RANGE_OFF(offset), \
++                        (vma)->vm_end - (vma)->vm_start, \
++                        (vma)->vm_page_prot)
++#else
+ #define REMAP_PAGE_RANGE(vma,offset) \
+     REMAP_PAGE_RANGE_FN(FGL_VMA_API_PASS \
+                         (vma)->vm_start,	\
+                         REMAP_PAGE_RANGE_OFF(offset), \
+                         (vma)->vm_end - (vma)->vm_start, \
+                         (vma)->vm_page_prot)
+-
++#endif
+ 
+ /* Page table macros */
+ 
+diff -urN a/make.sh b/make.sh
+--- a/make.sh	2006-09-05 14:58:52.000000000 -0400
++++ b/make.sh	2006-09-06 17:22:57.000000000 -0400
+@@ -1,5 +1,10 @@
+ #!/bin/bash
+ # ==============================================================
++# (C) 2006-2007 H. Andres Lagar-Cavilla, modifications to the ati 
++# fglrx kernel module open source wrapper made in the context of 
++# the vmgl project
++# ==============================================================
++# ==============================================================
+ # make.sh
+ # (C) 2001 by ATI Technologies
+ # ==============================================================
+@@ -436,7 +441,7 @@
+ else
+   if [ `cat $src_file | grep "#undef" | grep "CONFIG_SMP" -c` = 0 ]
+   then
+-    SMP=`cat $src_file | grep CONFIG_SMP | cut -d' ' -f3`
++    SMP=`cat $src_file | grep CONFIG_SMP | cut -d' ' -f3 | head -n 1`
+     echo "file $src_file says: SMP=$SMP"                           >> $logfile
+   fi
+ fi

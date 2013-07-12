@@ -1,0 +1,365 @@
+compoverlay.lo: compoverlay.c ../include/dix-config.h compint.h \
+ ../include/misc.h /usr/include/X11/Xosdefs.h \
+ /usr/include/X11/Xfuncproto.h /usr/include/X11/Xmd.h \
+ /usr/include/X11/X.h /usr/include/X11/Xdefs.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stddef.h ../include/os.h \
+ ../include/misc.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stdarg.h \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/X11/Xfuncs.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h /usr/include/assert.h \
+ /usr/include/ctype.h ../include/scrnintstr.h ../include/screenint.h \
+ ../include/regionstr.h ../include/miscstruct.h \
+ /usr/include/X11/Xprotostr.h /usr/include/pixman-1/pixman.h \
+ /usr/include/pixman-1/pixman-version.h /usr/include/stdint.h \
+ /usr/include/bits/wchar.h ../include/bstore.h ../include/bstorestr.h \
+ ../include/gc.h /usr/include/X11/Xproto.h ../include/pixmap.h \
+ ../include/region.h ../include/window.h ../include/colormap.h \
+ ../include/cursor.h ../include/validate.h ../include/dix.h \
+ ../include/input.h ../include/xkbrules.h ../include/events.h \
+ ../Xext/geext.h /usr/include/X11/extensions/geproto.h \
+ /usr/include/X11/extensions/ge.h /usr/include/X11/extensions/XI.h \
+ ../include/privates.h ../include/resource.h ../include/dixaccess.h \
+ ../include/os.h ../include/regionstr.h ../include/validate.h \
+ ../include/windowstr.h ../include/pixmapstr.h ../include/property.h \
+ ../include/opaque.h ../include/globals.h ../include/input.h \
+ ../include/resource.h ../include/colormapst.h /usr/include/X11/Xarch.h \
+ ../include/cursorstr.h ../include/dixstruct.h ../include/gcstruct.h \
+ ../include/servermd.h ../include/dixevents.h ../include/globals.h \
+ ../render/picturestr.h ../render/glyphstr.h \
+ /usr/include/X11/extensions/renderproto.h \
+ /usr/include/X11/extensions/render.h ../render/picture.h \
+ ../include/privates.h ../include/screenint.h ../include/miscstruct.h \
+ ../include/extnsionst.h ../include/extension.h ../mi/mi.h \
+ ../include/region.h ../include/window.h ../include/gc.h \
+ /usr/include/X11/fonts/font.h /usr/include/X11/fonts/fsmasks.h \
+ ../include/cursor.h ../include/colormap.h ../include/events.h \
+ ../miext/damage/damage.h ../damageext/damageextint.h \
+ /usr/include/X11/extensions/damageproto.h \
+ /usr/include/X11/extensions/xfixesproto.h \
+ /usr/include/X11/extensions/xfixeswire.h \
+ /usr/include/X11/extensions/shapeconst.h \
+ /usr/include/X11/extensions/damagewire.h ../include/selection.h \
+ ../include/dixstruct.h ../damageext/damageext.h ../xfixes/xfixes.h \
+ /usr/include/X11/extensions/compositeproto.h \
+ /usr/include/X11/extensions/composite.h ../Xext/xace.h \
+ ../include/pixmap.h ../include/property.h
+
+../include/dix-config.h:
+
+compint.h:
+
+../include/misc.h:
+
+/usr/include/X11/Xosdefs.h:
+
+/usr/include/X11/Xfuncproto.h:
+
+/usr/include/X11/Xmd.h:
+
+/usr/include/X11/X.h:
+
+/usr/include/X11/Xdefs.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stddef.h:
+
+../include/os.h:
+
+../include/misc.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/stdarg.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/X11/Xfuncs.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.4.5/include/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/assert.h:
+
+/usr/include/ctype.h:
+
+../include/scrnintstr.h:
+
+../include/screenint.h:
+
+../include/regionstr.h:
+
+../include/miscstruct.h:
+
+/usr/include/X11/Xprotostr.h:
+
+/usr/include/pixman-1/pixman.h:
+
+/usr/include/pixman-1/pixman-version.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+../include/bstore.h:
+
+../include/bstorestr.h:
+
+../include/gc.h:
+
+/usr/include/X11/Xproto.h:
+
+../include/pixmap.h:
+
+../include/region.h:
+
+../include/window.h:
+
+../include/colormap.h:
+
+../include/cursor.h:
+
+../include/validate.h:
+
+../include/dix.h:
+
+../include/input.h:
+
+../include/xkbrules.h:
+
+../include/events.h:
+
+../Xext/geext.h:
+
+/usr/include/X11/extensions/geproto.h:
+
+/usr/include/X11/extensions/ge.h:
+
+/usr/include/X11/extensions/XI.h:
+
+../include/privates.h:
+
+../include/resource.h:
+
+../include/dixaccess.h:
+
+../include/os.h:
+
+../include/regionstr.h:
+
+../include/validate.h:
+
+../include/windowstr.h:
+
+../include/pixmapstr.h:
+
+../include/property.h:
+
+../include/opaque.h:
+
+../include/globals.h:
+
+../include/input.h:
+
+../include/resource.h:
+
+../include/colormapst.h:
+
+/usr/include/X11/Xarch.h:
+
+../include/cursorstr.h:
+
+../include/dixstruct.h:
+
+../include/gcstruct.h:
+
+../include/servermd.h:
+
+../include/dixevents.h:
+
+../include/globals.h:
+
+../render/picturestr.h:
+
+../render/glyphstr.h:
+
+/usr/include/X11/extensions/renderproto.h:
+
+/usr/include/X11/extensions/render.h:
+
+../render/picture.h:
+
+../include/privates.h:
+
+../include/screenint.h:
+
+../include/miscstruct.h:
+
+../include/extnsionst.h:
+
+../include/extension.h:
+
+../mi/mi.h:
+
+../include/region.h:
+
+../include/window.h:
+
+../include/gc.h:
+
+/usr/include/X11/fonts/font.h:
+
+/usr/include/X11/fonts/fsmasks.h:
+
+../include/cursor.h:
+
+../include/colormap.h:
+
+../include/events.h:
+
+../miext/damage/damage.h:
+
+../damageext/damageextint.h:
+
+/usr/include/X11/extensions/damageproto.h:
+
+/usr/include/X11/extensions/xfixesproto.h:
+
+/usr/include/X11/extensions/xfixeswire.h:
+
+/usr/include/X11/extensions/shapeconst.h:
+
+/usr/include/X11/extensions/damagewire.h:
+
+../include/selection.h:
+
+../include/dixstruct.h:
+
+../damageext/damageext.h:
+
+../xfixes/xfixes.h:
+
+/usr/include/X11/extensions/compositeproto.h:
+
+/usr/include/X11/extensions/composite.h:
+
+../Xext/xace.h:
+
+../include/pixmap.h:
+
+../include/property.h:
