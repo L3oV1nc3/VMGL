@@ -1,4 +1,4 @@
-Auhtor: Joshua Humpich
+Author: Joshua Humpich
 Date: 22.05.2013
 
 
